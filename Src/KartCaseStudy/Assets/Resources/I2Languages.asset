@@ -1,0 +1,1957 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: Main Menu/Start Demo
+      TermType: 0
+      Description: 
+      Languages:
+      - Start Demo
+      - "Demoyu Ba\u015Flat"
+      - "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0414\u0435\u043C\u043E"
+      - "Iniciar Demostraci\xF3n"
+      - "Iniciar Demostraci\xF3n"
+      - "Iniciar Demonstra\xE7\xE3o"
+      - "Iniciar Demonstra\xE7\xE3o"
+      - Demo Starten
+      - "D\xE9marrer La D\xE9mo"
+      - Rozpocznij Demo
+      - Avviare La Dimostrazione
+      - "\u041F\u043E\u0447\u0430\u0442\u0438 \u0414\u0435\u043C\u043E\u043D\u0441\u0442\u0440\u0430\u0446\u0456\u044E"
+      - Spustit Demo
+      - "Ind\xEDtsa El A Dem\xF3t"
+      - Demo Starten
+      - Starta Demo
+      - Start Demo
+      - Aloita Demo
+      - "\xCEncepe Demonstra\u021Bia"
+      - Start Demoen
+      - "\u0388\u03BD\u03B1\u03C1\u03BE\u03B7 \u0395\u03C0\u03AF\u03B4\u03B5\u03B9\u03BE\u03B7\u03C2"
+      - Mulai Demo
+      - "\u0421\u0442\u0430\u0440\u0442\u0438\u0440\u0430\u0439\u0442\u0435 \u0414\u0435\u043C\u043E\u043D\u0441\u0442\u0440\u0430\u0446\u0438\u044F"
+      - "B\u1EAFt \u0110\u1EA7u B\u1EA3n Demo"
+      - "\u0E40\u0E23\u0E34\u0E48\u0E21\u0E01\u0E32\u0E23\u0E2A\u0E32\u0E18\u0E34\u0E15"
+      - "\uB370\uBAA8 \uC2DC\uC791"
+      - "\u30C7\u30E2\u3092\u958B\u59CB\u3059\u308B"
+      - "\u5F00\u59CB\u6F14\u793A"
+      - "\u958B\u59CB\u6F14\u793A"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Main Menu/Settings
+      TermType: 0
+      Description: 
+      Languages:
+      - Settings
+      - Ayarlar
+      - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+      - Ajustes
+      - Ajustes
+      - "Configura\xE7\xF5es"
+      - "Configura\xE7\xF5es"
+      - Einstellungen
+      - "Param\xE8tres"
+      - Ustawienia
+      - Impostazioni
+      - "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F"
+      - "Nastaven\xED"
+      - "Be\xE1ll\xEDt\xE1sok"
+      - Instellingen
+      - "Inst\xE4llningar"
+      - Indstillinger
+      - Asetukset
+      - "Set\u0103ri"
+      - Innstillinger
+      - "\u03A1\u03C5\u03B8\u03BC\u03AF\u03C3\u03B5\u03B9\u03C2"
+      - Pengaturan
+      - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+      - "C\xE0i \u0110\u1EB7t"
+      - "\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32"
+      - "\uC124\uC815"
+      - "\u8A2D\u5B9A"
+      - "\u8BBE\u7F6E"
+      - "\u8A2D\u5B9A"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Main Menu/Quit Game
+      TermType: 0
+      Description: 
+      Languages:
+      - Quit Game
+      - "Oyundan \xC7\u0131k"
+      - "\u0412\u044B\u0439\u0442\u0438 \u0418\u0437 \u0418\u0433\u0440\u044B"
+      - Salir Del Juego
+      - Salir Del Juego
+      - Desistir Do Jogo
+      - Desistir Do Jogo
+      - Spiel Verlassen
+      - Quitter Le Jeu
+      - "Zako\u0144czy\u0107 Gr\u0119"
+      - Abbandonare Il Gioco
+      - "\u0412\u0438\u0439\u0442\u0438 \u0417 \u0413\u0440\u0438"
+      - "Ukon\u010Dit Hru"
+      - "Kil\xE9pni A J\xE1t\xE9kb\xF3l"
+      - Spel Afsluiten
+      - Avsluta Spelet
+      - Afslutte Spillet
+      - Lopeta Peli
+      - "P\u0103r\u0103se\u0219te Jocul"
+      - Avslutt Spill
+      - "\u0395\u03B3\u03BA\u03B1\u03C4\u03B1\u03BB\u03B5\u03AF\u03C8\u03C4\u03B5
+        \u03A4\u03BF \u03A0\u03B1\u03B9\u03C7\u03BD\u03AF\u03B4\u03B9"
+      - Keluar Dari Permainan
+      - "\u041D\u0430\u043F\u0443\u0441\u043D\u0438 \u0418\u0433\u0440\u0430\u0442\u0430"
+      - "Tho\xE1t Kh\u1ECFi Tr\xF2 Ch\u01A1i"
+      - "\u0E2D\u0E2D\u0E01\u0E08\u0E32\u0E01\u0E40\u0E01\u0E21"
+      - "\uAC8C\uC784 \uC885\uB8CC"
+      - "\u30B2\u30FC\u30E0\u3092\u3084\u3081\u308B"
+      - "\u9000\u51FA\u6E38\u620F"
+      - "\u9000\u51FA\u904A\u6232"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Settings/Back
+      TermType: 0
+      Description: 
+      Languages:
+      - Back
+      - Geri
+      - "\u041D\u0430\u0437\u0430\u0434"
+      - "Atr\xE1s"
+      - "Atr\xE1s"
+      - Voltar
+      - Voltar
+      - "Zur\xFCck"
+      - Dos
+      - Z Powrotem
+      - Indietro
+      - "\u041D\u0430\u0437\u0430\u0434"
+      - "Zadn\xED"
+      - Vissza
+      - Rug
+      - Tillbaka
+      - Tilbage
+      - Takaisin
+      - "\xCEnapoi"
+      - Tilbake
+      - "\u03A0\u03AF\u03C3\u03C9"
+      - Kembali
+      - "\u041E\u0431\u0440\u0430\u0442\u043D\u043E"
+      - "M\u1EB7t Sau"
+      - "\u0E01\u0E25\u0E31\u0E1A"
+      - "\uB4A4\uCABD\uC5D0"
+      - "\u623B\u308B"
+      - "\u540E\u9000"
+      - "\u5F8C\u9000"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Settings/Graphic Quality
+      TermType: 0
+      Description: 
+      Languages:
+      - Graphics Quality
+      - Grafik Kalitesi
+      - "\u041A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0413\u0440\u0430\u0444\u0438\u043A\u0438"
+      - "Calidad De Los Gr\xE1ficos"
+      - "Calidad De Los Gr\xE1ficos"
+      - Qualidade Grafica
+      - Qualidade Grafica
+      - "Grafikqualit\xE4t"
+      - "Qualit\xE9 Graphique"
+      - "Jako\u015B\u0107 Grafiki"
+      - "Qualit\xE0 Grafica"
+      - "\u042F\u043A\u0456\u0441\u0442\u044C \u0413\u0440\u0430\u0444\u0456\u043A\u0438"
+      - Kvalita Obrazu
+      - "Grafikai Min\u0151s\xE9g"
+      - Grafische Kwaliteit
+      - Grafikkvalitet
+      - Grafisk Kvalitet
+      - Grafiikan Laatu
+      - "Calitate Grafic\u0103"
+      - Grafikkkvalitet
+      - "\u03A0\u03BF\u03B9\u03CC\u03C4\u03B7\u03C4\u03B1 \u0393\u03C1\u03B1\u03C6\u03B9\u03BA\u03CE\u03BD"
+      - Kualitas Grafik
+      - "\u041A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u041D\u0430 \u0413\u0440\u0430\u0444\u0438\u043A\u0438\u0442\u0435"
+      - "Ch\u1EA5t L\u01B0\u1EE3ng \u0110\u1ED3 H\u1ECDa"
+      - "\u0E04\u0E38\u0E13\u0E20\u0E32\u0E1E\u0E01\u0E23\u0E32\u0E1F\u0E34\u0E01"
+      - "\uADF8\uB798\uD53D \uD488\uC9C8"
+      - "\u30B0\u30E9\u30D5\u30A3\u30C3\u30AF\u306E\u8CEA"
+      - "\u56FE\u5F62\u8D28\u91CF"
+      - "\u5716\u5F62\u54C1\u8CEA"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Settings/Apply
+      TermType: 0
+      Description: 
+      Languages:
+      - Apply
+      - Uygula
+      - "\u041F\u0440\u0438\u043C\u0435\u043D\u044F\u0442\u044C"
+      - Aplicar
+      - Aplicar
+      - Aplicar
+      - Aplicar
+      - Anwenden
+      - Appliquer
+      - "Stosowa\u0107"
+      - Fare Domanda A
+      - "\u0417\u0430\u0441\u0442\u043E\u0441\u0443\u0432\u0430\u0442\u0438"
+      - Aplikovat
+      - Alkalmaz
+      - Toepassen
+      - "Till\xE4mpa"
+      - "Ans\xF8ge"
+      - "K\xE4yt\xE4"
+      - Aplica
+      - "S\xF8ke Om"
+      - "\u0399\u03C3\u03C7\u03CD\u03BF\u03C5\u03BD"
+      - Menerapkan
+      - "\u041F\u0440\u0438\u043B\u043E\u0436\u0438"
+      - "\xC1p D\u1EE5ng"
+      - "\u0E19\u0E33\u0E21\u0E32\u0E43\u0E0A\u0E49"
+      - "\uC801\uC6A9\uD558\uB2E4"
+      - "\u9069\u7528\u3059\u308B"
+      - "\u7533\u8BF7"
+      - "\u7533\u8ACB"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Settings/Language
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - Dil
+      - "\u042F\u0437\u044B\u043A"
+      - Idioma
+      - Idioma
+      - Linguagem
+      - Linguagem
+      - Sprache
+      - Langue
+      - "J\u0119zyk"
+      - Lingua
+      - "\u041C\u043E\u0432\u0430"
+      - Jazyk
+      - Nyelv
+      - Taal
+      - "Spr\xE5k"
+      - Sprog
+      - Kieli
+      - Limba
+      - "Spr\xE5k"
+      - "\u0393\u03BB\u03CE\u03C3\u03C3\u03B1"
+      - Bahasa
+      - "\u0415\u0437\u0438\u043A"
+      - "Ng\xF4n Ng\u1EEF"
+      - "\u0E20\u0E32\u0E29\u0E32"
+      - "\uC5B8\uC5B4"
+      - "\u8A00\u8A9E"
+      - "\u8BED\u8A00"
+      - "\u8A9E\u8A00"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Loading Screen/Prototype Project
+      TermType: 0
+      Description: 
+      Languages:
+      - Prototype Project
+      - Prototip Projesi
+      - "\u041F\u0440\u043E\u0442\u043E\u0442\u0438\u043F \u041F\u0440\u043E\u0435\u043A\u0442\u0430"
+      - Proyecto Prototipo
+      - Proyecto Prototipo
+      - "Projeto De Prot\xF3tipo"
+      - "Projeto De Prot\xF3tipo"
+      - Prototypenprojekt
+      - Projet Prototype
+      - Projekt Prototypowy
+      - Progetto Prototipo
+      - "\u041F\u0440\u043E\u0442\u043E\u0442\u0438\u043F \u041F\u0440\u043E\u0435\u043A\u0442\u0443"
+      - "Prototypov\xFD Projekt"
+      - "Protot\xEDpus Projekt"
+      - Prototypeproject
+      - Prototypprojekt
+      - Prototype Projekt
+      - Prototyyppiprojekti
+      - Proiect Prototip
+      - Prototypeprosjekt
+      - "\u03A0\u03C1\u03C9\u03C4\u03CC\u03C4\u03C5\u03C0\u03BF \u0388\u03C1\u03B3\u03BF"
+      - Proyek Prototipe
+      - "\u041F\u0440\u043E\u0442\u043E\u0442\u0438\u043F\u0435\u043D \u041F\u0440\u043E\u0435\u043A\u0442"
+      - "D\u1EF1 \xC1n Nguy\xEAn M\u1EABu"
+      - "\u0E42\u0E04\u0E23\u0E07\u0E01\u0E32\u0E23\u0E15\u0E49\u0E19\u0E41\u0E1A\u0E1A"
+      - "\uD504\uB85C\uD1A0\uD0C0\uC785 \uD504\uB85C\uC81D\uD2B8"
+      - "\u30D7\u30ED\u30C8\u30BF\u30A4\u30D7\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8"
+      - "\u539F\u578B\u9879\u76EE"
+      - "\u539F\u578B\u9805\u76EE"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Loading Screen/Demo scene is loading. Please wait.
+      TermType: 0
+      Description: 
+      Languages:
+      - Demo scene is loading. Please wait.
+      - "Demo sahnesi y\xFCkleniyor. L\xFCtfen bekleyin."
+      - "\u0414\u0435\u043C\u043E-\u0441\u0446\u0435\u043D\u0430 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442\u0441\u044F.
+        \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u043F\u043E\u0434\u043E\u0436\u0434\u0438\u0442\u0435."
+      - "La escena de demostraci\xF3n se est\xE1 cargando. Espere por favor."
+      - "La escena de demostraci\xF3n se est\xE1 cargando. Espere por favor."
+      - "A cena de demonstra\xE7\xE3o est\xE1 carregando. Por favor, aguarde."
+      - "A cena de demonstra\xE7\xE3o est\xE1 carregando. Por favor, aguarde."
+      - Demoszene wird geladen. Bitte warten.
+      - "La sc\xE8ne de d\xE9monstration est en cours de chargement. S'il vous pla\xEEt,
+        attendez."
+      - "\u0141aduje si\u0119 scena demonstracyjna. Prosz\u0119 czeka\u0107."
+      - "La scena demo \xE8 in fase di caricamento. Attendere prego."
+      - "\u0414\u0435\u043C\u043E\u043D\u0441\u0442\u0440\u0430\u0446\u0456\u0439\u043D\u0430
+        \u0441\u0446\u0435\u043D\u0430 \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0443\u0454\u0442\u044C\u0441\u044F.
+        \u0411\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u0437\u0430\u0447\u0435\u043A\u0430\u0439\u0442\u0435."
+      - "Demo sc\xE9na se na\u010D\xEDt\xE1. Pros\xEDm, \u010Dekejte."
+      - "A bemutat\xF3 jelenet bet\xF6lt\u0151dik. K\xE9rlek v\xE1rj."
+      - "Demosc\xE8ne wordt geladen. Even geduld aub."
+      - "Demoscenen laddas. V\xE4nta."
+      - "Demoscenen indl\xE6ses. Vent venligst."
+      - Demokohtaus latautuu. Odota.
+      - "Se \xEEncarc\u0103 scena demonstrativ\u0103. Va rugam asteptati."
+      - Demoscenen lastes inn. Vennligst vent.
+      - "\u0397 \u03C3\u03BA\u03B7\u03BD\u03AE \u03B5\u03C0\u03AF\u03B4\u03B5\u03B9\u03BE\u03B7\u03C2
+        \u03C6\u03BF\u03C1\u03C4\u03CE\u03BD\u03B5\u03C4\u03B1\u03B9. \u03A0\u03B1\u03C1\u03B1\u03BA\u03B1\u03BB\u03CE
+        \u03C0\u03B5\u03C1\u03B9\u03BC\u03AD\u03BD\u03B5\u03C4\u03B5."
+      - Adegan demo sedang dimuat. Harap tunggu.
+      - "\u0414\u0435\u043C\u043E \u0441\u0446\u0435\u043D\u0430\u0442\u0430 \u0441\u0435
+        \u0437\u0430\u0440\u0435\u0436\u0434\u0430. \u041C\u043E\u043B\u044F \u0418\u0437\u0447\u0430\u043A\u0430\u0439."
+      - "C\u1EA3nh demo \u0111ang t\u1EA3i. Vui l\xF2ng ch\u1EDD."
+      - "\u0E01\u0E33\u0E25\u0E31\u0E07\u0E42\u0E2B\u0E25\u0E14\u0E09\u0E32\u0E01\u0E2A\u0E32\u0E18\u0E34\u0E15
+        \u0E42\u0E1B\u0E23\u0E14\u0E23\u0E2D."
+      - "\uB370\uBAA8 \uC7A5\uBA74\uC774 \uB85C\uB4DC \uC911\uC785\uB2C8\uB2E4. \uAE30\uB2E4\uB9AC\uC138\uC694."
+      - "\u30C7\u30E2\u30B7\u30FC\u30F3\u3092\u30ED\u30FC\u30C9\u4E2D\u3067\u3059\u3002\u304A\u5F85\u3061\u304F\u3060\u3055\u3044\u3002"
+      - "\u6F14\u793A\u573A\u666F\u6B63\u5728\u52A0\u8F7D\u3002\u8BF7\u7A0D\u7B49\u3002"
+      - "\u6F14\u793A\u5834\u666F\u6B63\u5728\u8F09\u5165\u3002\u8ACB\u7A0D\u7B49\u3002"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Loading Screen/Press any key to continue.
+      TermType: 0
+      Description: 
+      Languages:
+      - Press any key to continue.
+      - "Devam etmek i\xE7in herhangi bir tu\u015Fa bas\u0131n."
+      - "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043B\u044E\u0431\u0443\u044E
+        \u043A\u043B\u0430\u0432\u0438\u0448\u0443 \u0434\u043B\u044F \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0435\u043D\u0438\u044F."
+      - Pulse cualquier tecla para continuar.
+      - Pulse cualquier tecla para continuar.
+      - Pressione qualquer tecla para continuar.
+      - Pressione qualquer tecla para continuar.
+      - "Dr\xFCcken Sie eine beliebige Taste, um fortzufahren."
+      - Appuyez sur n'importe quelle touche pour continuer.
+      - "Naci\u015Bnij dowolny klawisz, aby kontynuowa\u0107."
+      - Premere un tasto qualsiasi per continuare.
+      - "\u041D\u0430\u0442\u0438\u0441\u043D\u0456\u0442\u044C \u0431\u0443\u0434\u044C-\u044F\u043A\u0443
+        \u043A\u043D\u043E\u043F\u043A\u0443, \u0449\u043E\u0431 \u043F\u0440\u043E\u0434\u043E\u0432\u0436\u0438\u0442\u0438."
+      - "Pokra\u010Dujte stiskem libovoln\xE9 kl\xE1vesy."
+      - "Nyomjon meg egy gombot a folytat\xE1shoz."
+      - Druk op een willekeurige toets om door te gaan.
+      - "Tryck p\xE5 valfri tangent f\xF6r att forts\xE4tta."
+      - "Tryk p\xE5 en vilk\xE5rlig tast for at forts\xE6tte."
+      - "Paina mit\xE4 tahansa n\xE4pp\xE4int\xE4 jatkaaksesi."
+      - "Ap\u0103sa\u021Bi orice tast\u0103 pentru a continua."
+      - "Press hvilken som helst tast for \xE5 fortsette."
+      - "\u03A0\u03B1\u03C4\u03AE\u03C3\u03C4\u03B5 \u03BF\u03C0\u03BF\u03B9\u03BF\u03B4\u03AE\u03C0\u03BF\u03C4\u03B5
+        \u03BA\u03BF\u03C5\u03BC\u03C0\u03AF \u03B3\u03B9\u03B1 \u03BD\u03B1 \u03C3\u03C5\u03BD\u03B5\u03C7\u03AF\u03C3\u03B5\u03C4\u03B5."
+      - Tekan tombol apa saja untuk melanjutkan.
+      - "\u041D\u0430\u0442\u0438\u0441\u043D\u0435\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u043B\u0435\u043D
+        \u043A\u043B\u0430\u0432\u0438\u0448, \u0437\u0430 \u0434\u0430 \u043F\u0440\u043E\u0434\u044A\u043B\u0436\u0438\u0442\u0435."
+      - "B\u1EA5m ph\xEDm b\u1EA5t k\u1EF3 \u0111\u1EC3 ti\u1EBFp t\u1EE5c."
+      - "\u0E01\u0E14\u0E1B\u0E38\u0E48\u0E21\u0E43\u0E14\u0E01\u0E47\u0E44\u0E14\u0E49\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E33\u0E40\u0E19\u0E34\u0E19\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D"
+      - "\uACC4\uC18D\uD558\uB824\uBA74 \uC544\uBB34 \uD0A4\uB098 \uB204\uB974\uC138\uC694."
+      - "\u4F55\u304B\u30AD\u30FC\u3092\u62BC\u3059\u3068\u7D9A\u884C\u3057\u307E\u3059\u3002"
+      - "\u6309\u4EFB\u610F\u952E\u7EE7\u7EED\u3002"
+      - "\u6309\u4EFB\u610F\u9375\u7E7C\u7E8C\u3002"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Graphics Settings/Low
+      TermType: 0
+      Description: 
+      Languages:
+      - Low
+      - "D\xFC\u015F\xFCk"
+      - "\u041D\u0438\u0437\u043A\u0438\u0439"
+      - Bajo
+      - Bajo
+      - Baixo
+      - Baixo
+      - Niedrig
+      - Faible
+      - Niski
+      - Basso
+      - "\u041D\u0438\u0437\u044C\u043A\u0438\u0439"
+      - "N\xEDzk\xFD"
+      - Alacsony
+      - Laag
+      - "L\xE5g"
+      - Lav
+      - Matala
+      - "Sc\u0103zut"
+      - Lav
+      - "\u03A7\u03B1\u03BC\u03B7\u03BB\u03CC\u03C2"
+      - Rendah
+      - "\u041D\u0438\u0441\u043A\u043E"
+      - "Th\u1EA5p"
+      - "\u0E15\u0E48\u0E33"
+      - "\uB0AE\uC740"
+      - "\u4F4E\u3044"
+      - "\u4F4E\u7684"
+      - "\u4F4E\u7684"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Graphics Settings/Medium
+      TermType: 0
+      Description: 
+      Languages:
+      - Medium
+      - Orta
+      - "\u0421\u0435\u0440\u0435\u0434\u0438\u043D\u0430"
+      - Medio
+      - Medio
+      - "M\xE9dio"
+      - "M\xE9dio"
+      - Mittel
+      - Moyen
+      - "\u015Aredni"
+      - Medio
+      - "\u0421\u0435\u0440\u0435\u0434\u043D\u0456\u0439"
+      - "St\u0159edn\xED"
+      - "K\xF6zepes"
+      - Medium
+      - Medium
+      - Medium
+      - Keskikokoinen
+      - Mediu
+      - Medium
+      - "\u039C\u03B5\u03C3\u03B1\u03AF\u03BF"
+      - Sedang
+      - "\u0421\u0440\u0435\u0434\u0435\u043D"
+      - "Trung B\xECnh"
+      - "\u0E1B\u0E32\u0E19\u0E01\u0E25\u0E32\u0E07"
+      - "\uC911\uAC04"
+      - "\u4E2D\u304F\u3089\u3044"
+      - "\u4E2D\u7B49\u7684"
+      - "\u4E2D\u7B49\u7684"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Graphics Settings/High
+      TermType: 0
+      Description: 
+      Languages:
+      - High
+      - "Y\xFCksek"
+      - "\u0412\u044B\u0441\u043E\u043A\u0438\u0439"
+      - Alto
+      - Alto
+      - Alto
+      - Alto
+      - Hoch
+      - Haut
+      - Wysoki
+      - Alto
+      - "\u0412\u0438\u0441\u043E\u043A\u0430"
+      - "Vysok\xFD"
+      - Magas
+      - Hoog
+      - "H\xF6g"
+      - "H\xF8j"
+      - Korkea
+      - "\xCEnalt"
+      - "H\xF8y"
+      - "\u03A5\u03C8\u03B7\u03BB\u03CC\u03C2"
+      - Tinggi
+      - "\u0412\u0438\u0441\u043E\u043A\u043E"
+      - Cao
+      - "\u0E2A\u0E39\u0E07"
+      - "\uB192\uC740"
+      - "\u9AD8\u3044"
+      - "\u9AD8\u7684"
+      - "\u9AD8\u7684"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Graphics Settings/Very High
+      TermType: 0
+      Description: 
+      Languages:
+      - Very High
+      - "\xC7ok Y\xFCksek"
+      - "\u041E\u0447\u0435\u043D\u044C \u0412\u044B\u0441\u043E\u043A\u043E"
+      - Muy Alto
+      - Muy Alto
+      - Muito Alto
+      - Muito Alto
+      - Sehr Hoch
+      - "Tr\xE8s Haut"
+      - Bardzo Wysoko
+      - Molto Alto
+      - "\u0414\u0443\u0436\u0435 \u0412\u0438\u0441\u043E\u043A\u043E"
+      - Velmi Vysoko
+      - Nagyon Magas
+      - Heel Hoog
+      - "V\xE4ldigt H\xF6gt"
+      - "Meget H\xF8j"
+      - "Eritt\xE4in Korkea"
+      - Foarte Inalt
+      - "Veldig H\xF8y"
+      - "\u03A0\u03BF\u03BB\u03CD \u03A8\u03B7\u03BB\u03AC"
+      - Sangat Tinggi
+      - "\u041C\u043D\u043E\u0433\u043E \u0412\u0438\u0441\u043E\u043A\u043E"
+      - "R\u1EA5t Cao"
+      - "\u0E2A\u0E39\u0E07\u0E21\u0E32\u0E01"
+      - "\uB9E4\uC6B0 \uB192\uB2E4"
+      - "\u3059\u3054\u304F\u9AD8\u3044"
+      - "\u5F88\u9AD8"
+      - "\u5F88\u9AD8"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Graphics Settings/Ultra
+      TermType: 0
+      Description: 
+      Languages:
+      - Ultra
+      - Ultra
+      - "\u0423\u043B\u044C\u0442\u0440\u0430"
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - "\u0423\u043B\u044C\u0442\u0440\u0430"
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - Ultra
+      - "\u03A5\u03C0\u03B5\u03C1"
+      - Sangat
+      - "\u0423\u043B\u0442\u0440\u0430"
+      - "C\u1EF1c K\u1EF3"
+      - "\u0E1E\u0E34\u0E40\u0E28\u0E29"
+      - "\uADF9\uB2E8\uB860\uC790"
+      - "\u30A6\u30EB\u30C8\u30E9"
+      - "\u6781\u7AEF\u4E3B\u4E49\u8005"
+      - "\u6975\u7AEF\u4E3B\u7FA9\u8005"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/English
+      TermType: 0
+      Description: 
+      Languages:
+      - English
+      - "\u0130ngilizce"
+      - "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439"
+      - "Ingl\xE9s"
+      - "Ingl\xE9s"
+      - "Ingl\xEAs"
+      - "Ingl\xEAs"
+      - Englisch
+      - Anglais
+      - "J\u0119zyk Angielski"
+      - Inglese
+      - "\u0410\u043D\u0433\u043B\u0456\u0439\u0441\u044C\u043A\u0430"
+      - "Angli\u010Dtina"
+      - Angol
+      - Engels
+      - Engelsk
+      - Engelsk
+      - Englanti
+      - "Englez\u0103"
+      - Engelsk
+      - "\u0391\u03B3\u03B3\u03BB\u03B9\u03BA\u03AC"
+      - Bahasa Inggris
+      - "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438"
+      - "Ti\u1EBFng Anh"
+      - "\u0E20\u0E32\u0E29\u0E32\u0E2D\u0E31\u0E07\u0E01\u0E24\u0E29"
+      - "\uC601\uC5B4"
+      - "\u82F1\u8A9E"
+      - "\u82F1\u8BED"
+      - "\u82F1\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Russian
+      TermType: 0
+      Description: 
+      Languages:
+      - Russian
+      - "Rus\xE7a"
+      - "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+      - Ruso
+      - Ruso
+      - Russo
+      - Russo
+      - Russisch
+      - Russe
+      - Rosyjski
+      - Russo
+      - "\u0420\u043E\u0441\u0456\u0439\u0441\u044C\u043A\u0438\u0439"
+      - "Ru\u0161tina"
+      - Orosz
+      - Russisch
+      - Ryska
+      - Russisk
+      - "Ven\xE4j\xE4n Kieli"
+      - "Rus\u0103"
+      - Russisk
+      - "\u03A1\u03C9\u03C3\u03B9\u03BA\u03AE"
+      - Rusia
+      - "\u0420\u0443\u0441\u043A\u0438"
+      - "Ti\u1EBFng Nga"
+      - "\u0E23\u0E31\u0E2A\u0E40\u0E0B\u0E35\u0E22"
+      - "\uB7EC\uC2DC\uC544\uC778"
+      - "\u30ED\u30B7\u30A2"
+      - "\u4FC4\u8BED"
+      - "\u4FC4\u6587"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/German
+      TermType: 0
+      Description: 
+      Languages:
+      - German
+      - Almanca
+      - "\u041D\u0435\u043C\u0435\u0446\u043A\u0438\u0439"
+      - "Alem\xE1n"
+      - "Alem\xE1n"
+      - "Alem\xE3o"
+      - "Alem\xE3o"
+      - Deutsch
+      - Allemand
+      - Niemiecki
+      - Tedesco
+      - "\u041D\u0456\u043C\u0435\u0446\u044C\u043A\u0438\u0439"
+      - "N\u011Bmec"
+      - "N\xE9met"
+      - Duits
+      - Tysk
+      - Tysk
+      - Saksan Kieli
+      - Limba Germana
+      - Tysk
+      - "\u0393\u03B5\u03C1\u03BC\u03B1\u03BD\u03CC\u03C2"
+      - Jerman
+      - "\u041D\u0435\u043C\u0441\u043A\u0438"
+      - "Ti\u1EBFng \u0110\u1EE9c"
+      - "\u0E40\u0E22\u0E2D\u0E23\u0E21\u0E31\u0E19"
+      - "\uB3C5\uC77C \uC0AC\uB78C"
+      - "\u30C9\u30A4\u30C4\u4EBA"
+      - "\u5FB7\u8BED"
+      - "\u5FB7\u6587"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Japanese
+      TermType: 0
+      Description: 
+      Languages:
+      - Japanese
+      - Japonca
+      - "\u042F\u043F\u043E\u043D\u0441\u043A\u0438\u0439"
+      - "Japon\xE9s"
+      - "Japon\xE9s"
+      - "Japon\xEAs"
+      - "Japon\xEAs"
+      - Japanisch
+      - Japonais
+      - "J\u0119zyk Japo\u0144ski"
+      - Giapponese
+      - "\u042F\u043F\u043E\u043D\u0441\u044C\u043A\u0438\u0439"
+      - "Japonsk\xFD"
+      - "Jap\xE1n"
+      - Japans
+      - Japanska
+      - Japansk
+      - Japanilainen
+      - Japonez
+      - Japansk
+      - "\u0399\u03B1\u03C0\u03C9\u03BD\u03B9\u03BA\u03AC"
+      - Jepang
+      - "\u042F\u043F\u043E\u043D\u0441\u043A\u0438"
+      - "Ti\u1EBFng Nh\u1EADt"
+      - "\u0E0D\u0E35\u0E48\u0E1B\u0E38\u0E48\u0E19"
+      - "\uC77C\uBCF8\uC5B4"
+      - "\u65E5\u672C\u8A9E"
+      - "\u65E5\u672C\u4EBA"
+      - "\u65E5\u672C\u4EBA"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/French
+      TermType: 0
+      Description: 
+      Languages:
+      - French
+      - "Frans\u0131zca"
+      - "\u0424\u0440\u0430\u043D\u0446\u0443\u0437\u0441\u043A\u0438\u0439"
+      - "Franc\xE9s"
+      - "Franc\xE9s"
+      - "Franc\xEAs"
+      - "Franc\xEAs"
+      - "Franz\xF6sisch"
+      - "Fran\xE7ais"
+      - Francuski
+      - Francese
+      - "\u0424\u0440\u0430\u043D\u0446\u0443\u0437\u044C\u043A\u0430"
+      - "Francouz\u0161tina"
+      - Francia
+      - Frans
+      - Franska
+      - Fransk
+      - Ranskan Kieli
+      - Limba Franceza
+      - Fransk
+      - "\u0393\u03B1\u03BB\u03BB\u03B9\u03BA\u03AE \u0393\u03BB\u03CE\u03C3\u03C3\u03B1"
+      - Perancis
+      - "\u0424\u0440\u0435\u043D\u0441\u043A\u0438"
+      - "Ng\u01B0\u1EDDi Ph\xE1p"
+      - "\u0E20\u0E32\u0E29\u0E32\u0E1D\u0E23\u0E31\u0E48\u0E07\u0E40\u0E28\u0E2A"
+      - "\uD504\uB791\uC2A4 \uAD6D\uBBFC"
+      - "\u30D5\u30E9\u30F3\u30B9\u8A9E"
+      - "\u6CD5\u8BED"
+      - "\u6CD5\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Polish
+      TermType: 0
+      Description: 
+      Languages:
+      - Polish
+      - "Leh\xE7e"
+      - "\u041F\u043E\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+      - Polaco
+      - Polaco
+      - "Polon\xEAs"
+      - "Polon\xEAs"
+      - Polieren
+      - Polonais
+      - Polski
+      - Polacco
+      - "\u041F\u043E\u043B\u0456\u0440\u0443\u0432\u0430\u0442\u0438"
+      - "Pol\u0161tina"
+      - "F\xE9nyes\xEDt"
+      - Pools
+      - Putsa
+      - Polere
+      - Kiillottaa
+      - Lustrui
+      - Pusse
+      - "\u03A3\u03C4\u03AF\u03BB\u03B2\u03C9\u03C3\u03B7"
+      - Polandia
+      - "\u041F\u043E\u043B\u0438\u0440\u0430\u043D\u0435"
+      - "\u0110\xE1nh B\xF3ng"
+      - "\u0E02\u0E31\u0E14"
+      - "\uAD11\uD0DD"
+      - "\u7814\u78E8"
+      - "\u629B\u5149"
+      - "\u62CB\u5149"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Turkish
+      TermType: 0
+      Description: 
+      Languages:
+      - Turkish
+      - "T\xFCrk\xE7e"
+      - "\u0422\u0443\u0440\u0435\u0446\u043A\u0438\u0439"
+      - Turco
+      - Turco
+      - Turco
+      - Turco
+      - "T\xFCrkisch"
+      - Turc
+      - Turecki
+      - Turco
+      - "\u0422\u0443\u0440\u0435\u0446\u044C\u043A\u0430"
+      - "Ture\u010Dtina"
+      - "T\xF6r\xF6k"
+      - Turks
+      - Turkiska
+      - Tyrkisk
+      - Turkkilainen
+      - Turc
+      - Tyrkisk
+      - "\u03A4\u03BF\u03CD\u03C1\u03BA\u03B9\u03BA\u03BF\u03C2"
+      - Turki
+      - "\u0422\u0443\u0440\u0441\u043A\u0438"
+      - "Ti\u1EBFng Th\u1ED5 Nh\u0129 K\u1EF3"
+      - "\u0E15\u0E38\u0E23\u0E01\u0E35"
+      - "\uD130\uD0A4 \uC0AC\uB78C"
+      - "\u30C8\u30EB\u30B3\u8A9E"
+      - "\u571F\u8033\u5176"
+      - "\u571F\u8033\u5176"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Korean
+      TermType: 0
+      Description: 
+      Languages:
+      - Korean
+      - Korece
+      - "\u041A\u043E\u0440\u0435\u0439\u0441\u043A\u0438\u0439"
+      - Coreano
+      - Coreano
+      - Coreano
+      - Coreano
+      - Koreanisch
+      - "Cor\xE9en"
+      - "Korea\u0144ski"
+      - Coreano
+      - "\u041A\u043E\u0440\u0435\u0439\u0441\u044C\u043A\u0430"
+      - "Korej\u0161tina"
+      - Koreai
+      - Koreaans
+      - Koreanska
+      - Koreansk
+      - Korealainen
+      - "Coreean\u0103"
+      - Koreansk
+      - "\u039A\u03BF\u03C1\u03B5\u03AC\u03C4\u03B7\u03C2"
+      - Korea
+      - "\u041A\u043E\u0440\u0435\u0439\u0441\u043A\u0438"
+      - "H\xE0n Qu\u1ED1c"
+      - "\u0E40\u0E01\u0E32\u0E2B\u0E25\u0E35"
+      - "\uD55C\uAD6D\uC778"
+      - "\u97D3\u56FD\u8A9E"
+      - "\u97E9\u56FD\u4EBA"
+      - "\u97D3\u570B\u4EBA"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Thai
+      TermType: 0
+      Description: 
+      Languages:
+      - Thai
+      - Tayca
+      - "\u0422\u0430\u0439\u0441\u043A\u0438\u0439"
+      - "Tailand\xE9s"
+      - "Tailand\xE9s"
+      - "Tailand\xEAs"
+      - "Tailand\xEAs"
+      - "Thail\xE4ndisch"
+      - "Tha\xEFlandais"
+      - Tajski
+      - Tailandese
+      - "\u0422\u0430\u0439\u0441\u044C\u043A\u0430"
+      - "Thaj\u0161tina"
+      - Thai
+      - Thais
+      - Thai
+      - Thai
+      - Thai
+      - Thailandez
+      - Thai
+      - "\u03A4\u03B1\u03CA\u03BB\u03B1\u03BD\u03B4\u03B9\u03BA\u03AC"
+      - Thai
+      - "\u0422\u0430\u0439\u043B\u0430\u043D\u0434\u0441\u043A\u0438"
+      - "Ng\u01B0\u1EDDi Th\xE1i"
+      - "\u0E41\u0E1A\u0E1A\u0E44\u0E17\u0E22"
+      - "\uD0DC\uAD6D\uC5B4"
+      - "\u30BF\u30A4\u4EBA"
+      - "\u6CF0\u56FD"
+      - "\u6CF0\u570B"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Ukrainian
+      TermType: 0
+      Description: 
+      Languages:
+      - Ukrainian
+      - Ukraynaca
+      - "\u0423\u043A\u0440\u0430\u0438\u043D\u0435\u0446"
+      - Ucranio
+      - Ucranio
+      - Ucraniano
+      - Ucraniano
+      - Ukrainisch
+      - Ukrainien
+      - "Ukrai\u0144ski"
+      - Ucraino
+      - "\u0423\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430"
+      - "Ukrajin\u0161tina"
+      - "Ukr\xE1n"
+      - "Oekra\xEFens"
+      - Ukrainska
+      - Ukrainsk
+      - Ukrainalainen
+      - Ucrainean
+      - Ukrainsk
+      - "\u039F\u03C5\u03BA\u03C1\u03B1\u03BD\u03CC\u03C2"
+      - Orang Ukraina
+      - "\u0423\u043A\u0440\u0430\u0438\u043D\u0441\u043A\u0438"
+      - "Ti\u1EBFng Ukraina"
+      - "\u0E0A\u0E32\u0E27\u0E22\u0E39\u0E40\u0E04\u0E23\u0E19"
+      - "\uC6B0\uD06C\uB77C\uC774\uB098 \uC778"
+      - "\u30A6\u30AF\u30E9\u30A4\u30CA\u4EBA"
+      - "\u4E4C\u514B\u5170"
+      - "\u70CF\u514B\u862D"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Italian
+      TermType: 0
+      Description: 
+      Languages:
+      - Italian
+      - "\u0130talyanca"
+      - "\u0418\u0442\u0430\u043B\u044C\u044F\u043D\u0441\u043A\u0438\u0439"
+      - Italiano
+      - Italiano
+      - Italiano
+      - Italiano
+      - Italienisch
+      - Italien
+      - "W\u0142oski"
+      - Italiano
+      - "\u0406\u0442\u0430\u043B\u0456\u0439\u0441\u044C\u043A\u0430"
+      - "Ital\u0161tina"
+      - Olasz
+      - Italiaans
+      - Italienska
+      - Italiensk
+      - Italialainen
+      - "Italian\u0103"
+      - Italiensk
+      - "\u0399\u03C4\u03B1\u03BB\u03B9\u03BA\u03CC\u03C2"
+      - Italia
+      - "\u0418\u0442\u0430\u043B\u0438\u0430\u043D\u0441\u043A\u0438"
+      - "Ng\u01B0\u1EDDi \xDD"
+      - "\u0E20\u0E32\u0E29\u0E32\u0E2D\u0E34\u0E15\u0E32\u0E25\u0E35"
+      - "\uC774\uD0C8\uB9AC\uC544 \uC0AC\uB78C"
+      - "\u30A4\u30BF\u30EA\u30A2\u306E"
+      - "\u610F\u5927\u5229\u8BED"
+      - "\u7FA9\u5927\u5229\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Czech
+      TermType: 0
+      Description: 
+      Languages:
+      - Czech
+      - "\xC7ekce"
+      - "\u0427\u0435\u0448\u0441\u043A\u0438\u0439"
+      - Checo
+      - Checo
+      - Tcheco
+      - Tcheco
+      - Tschechisch
+      - "Tch\xE8que"
+      - Czech
+      - Ceco
+      - "\u0427\u0435\u0441\u044C\u043A\u0430"
+      - "\u010Ce\u0161tina"
+      - Cseh
+      - Tsjechisch
+      - Tjeckiska
+      - Tjekkisk
+      - "T\u0161ekki"
+      - Ceh
+      - Tsjekkisk
+      - "\u03A4\u03C3\u03AD\u03C7\u03BF\u03C2"
+      - Ceko
+      - "\u0427\u0435\u0448\u043A\u0438"
+      - "S\xE9c"
+      - "\u0E40\u0E0A\u0E47\u0E01"
+      - "\uCCB4\uCF54 \uC0AC\uB78C"
+      - "\u30C1\u30A7\u30B3\u8A9E"
+      - "\u6377\u514B\u8BED"
+      - "\u6377\u514B\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Hungarian
+      TermType: 0
+      Description: 
+      Languages:
+      - Hungarian
+      - Macarca
+      - "\u0412\u0435\u043D\u0433\u0435\u0440\u0441\u043A\u0438\u0439"
+      - "H\xFAngaro"
+      - "H\xFAngaro"
+      - "H\xFAngaro"
+      - "H\xFAngaro"
+      - Ungarisch
+      - Hongrois
+      - "J\u0119zyk W\u0119gierski"
+      - Ungherese
+      - "\u0423\u0433\u043E\u0440\u0441\u044C\u043A\u0430"
+      - "Ma\u010Farsk\xFD"
+      - Magyar
+      - Hongaars
+      - Ungerska
+      - Ungarsk
+      - Unkarin Kieli
+      - "Maghiar\u0103"
+      - Ungarsk
+      - "\u039F\u03C5\u03B3\u03B3\u03C1\u03B9\u03BA\u03CC\u03C2"
+      - Hongaria
+      - "\u0423\u043D\u0433\u0430\u0440\u0441\u043A\u0438"
+      - "Ng\u01B0\u1EDDi Hungary"
+      - "\u0E2E\u0E31\u0E07\u0E01\u0E32\u0E23\u0E35"
+      - "\uD5DD\uAC00\uB9AC \uC778"
+      - "\u30CF\u30F3\u30AC\u30EA\u30FC\u4EBA"
+      - "\u5308\u7259\u5229"
+      - "\u5308\u7259\u5229"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Dutch
+      TermType: 0
+      Description: 
+      Languages:
+      - Dutch
+      - "Flemenk\xE7e"
+      - "\u0413\u043E\u043B\u043B\u0430\u043D\u0434\u0441\u043A\u0438\u0439"
+      - "Holand\xE9s"
+      - "Holand\xE9s"
+      - "Holand\xEAs"
+      - "Holand\xEAs"
+      - "Niederl\xE4ndisch"
+      - "N\xE9erlandais"
+      - Holenderski
+      - Olandese
+      - "\u0413\u043E\u043B\u043B\u0430\u043D\u0434\u0441\u044C\u043A\u0438\u0439"
+      - "Holandsk\xFD"
+      - Holland
+      - Nederlands
+      - "Holl\xE4ndska"
+      - Hollandsk
+      - Hollannin Kieli
+      - "Olandez\u0103"
+      - Nederlandsk
+      - "\u039F\u03BB\u03BB\u03B1\u03BD\u03B4\u03CC\u03C2"
+      - Belanda
+      - "\u0425\u043E\u043B\u0430\u043D\u0434\u0441\u043A\u0438"
+      - "Ti\u1EBFng H\xE0 Lan"
+      - "\u0E14\u0E31\u0E15\u0E0A\u0E4C"
+      - "\uB124\uB35C\uB780\uB4DC \uC0AC\uB78C"
+      - "\u30AA\u30E9\u30F3\u30C0\u306E"
+      - "\u8377\u5170\u8BED"
+      - "\u8377\u862D\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Swedish
+      TermType: 0
+      Description: 
+      Languages:
+      - Swedish
+      - "\u0130sve\xE7\xE7e"
+      - "\u0428\u0432\u0435\u0434\u0441\u043A\u0438\u0439"
+      - Sueco
+      - Sueco
+      - Sueco
+      - Sueco
+      - Schwedisch
+      - "Su\xE9dois"
+      - Szwedzki
+      - Svedese
+      - "\u0428\u0432\u0435\u0434\u0441\u044C\u043A\u0430"
+      - "\u0160v\xE9dsk\xFD"
+      - "Sv\xE9d"
+      - Zweeds
+      - Svenska
+      - Svensk
+      - Ruotsin Kieli
+      - Suedez
+      - Svensk
+      - "\u03A3\u03BF\u03C5\u03B7\u03B4\u03B9\u03BA\u03AC"
+      - Orang Swedia
+      - "\u0428\u0432\u0435\u0434\u0441\u043A\u0438"
+      - "Ng\u01B0\u1EDDi Th\u1EE5y \u0110i\u1EC3n"
+      - "\u0E2A\u0E27\u0E35\u0E40\u0E14\u0E19"
+      - "\uC2A4\uC6E8\uB374\uC5B4"
+      - "\u30B9\u30A6\u30A7\u30FC\u30C7\u30F3\u306E"
+      - "\u745E\u5178"
+      - "\u745E\u5178"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Danish
+      TermType: 0
+      Description: 
+      Languages:
+      - Danish
+      - Danimarkaca
+      - "\u0414\u0430\u0442\u0441\u043A\u0438\u0439"
+      - "Dan\xE9s"
+      - "Dan\xE9s"
+      - "Dinamarqu\xEAs"
+      - "Dinamarqu\xEAs"
+      - "D\xE4nisch"
+      - Danois
+      - "Du\u0144ski"
+      - Danese
+      - "\u0414\u0430\u0442\u0441\u044C\u043A\u0438\u0439"
+      - "D\xE1n\u0161tina"
+      - "D\xE1n"
+      - Deens
+      - Danska
+      - Dansk
+      - Tanskan Kieli
+      - Danez
+      - Dansk
+      - "\u0394\u03B1\u03BD\u03B9\u03BA\u03CC\u03C2"
+      - Orang Denmark
+      - "\u0414\u0430\u0442\u0441\u043A\u0438"
+      - "Ng\u01B0\u1EDDi \u0110an M\u1EA1ch"
+      - "\u0E20\u0E32\u0E29\u0E32\u0E40\u0E14\u0E19\u0E21\u0E32\u0E23\u0E4C\u0E01"
+      - "\uB374\uB9C8\uD06C \uB9D0"
+      - "\u30C7\u30F3\u30DE\u30FC\u30AF\u8A9E"
+      - "\u4E39\u9EA6\u8BED\u7684"
+      - "\u4E39\u9EA5\u8A9E\u7684"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Finnish
+      TermType: 0
+      Description: 
+      Languages:
+      - Finnish
+      - Fince
+      - "\u0424\u0438\u043D\u0441\u043A\u0438\u0439"
+      - "Finland\xE9s"
+      - "Finland\xE9s"
+      - "Finland\xEAs"
+      - "Finland\xEAs"
+      - Finnisch
+      - Finlandais
+      - "Fi\u0144ski"
+      - Finlandese
+      - "\u0424\u0456\u043D\u0441\u044C\u043A\u0430"
+      - "Fin\u0161tina"
+      - Finn
+      - Fins
+      - Finska
+      - Finsk
+      - Suomalainen
+      - "Finlandez\u0103"
+      - Finsk
+      - "\u03A6\u03B9\u03BD\u03BB\u03B1\u03BD\u03B4\u03B9\u03BA\u03CC\u03C2"
+      - Finlandia
+      - "\u0424\u0438\u043D\u043B\u0430\u043D\u0434\u0441\u043A\u0438"
+      - "Ti\u1EBFng Ph\u1EA7n Lan"
+      - "\u0E20\u0E32\u0E29\u0E32\u0E1F\u0E34\u0E19\u0E41\u0E25\u0E19\u0E14\u0E4C"
+      - "\uD540\uB780\uB4DC\uC758"
+      - "\u30D5\u30A3\u30F3\u30E9\u30F3\u30C9\u8A9E"
+      - "\u82AC\u5170"
+      - "\u82AC\u862D"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Romanian
+      TermType: 0
+      Description: 
+      Languages:
+      - Romanian
+      - Romence
+      - "\u0420\u0443\u043C\u044B\u043D\u0441\u043A\u0438\u0439"
+      - Rumano
+      - Rumano
+      - Romena
+      - Romena
+      - "Rum\xE4nisch"
+      - Roumain
+      - "Rumu\u0144ski"
+      - Rumeno
+      - "\u0420\u0443\u043C\u0443\u043D\u0441\u044C\u043A\u0430"
+      - "Rumun\u0161tina"
+      - "Rom\xE1n"
+      - Roemeense
+      - "Rum\xE4nska"
+      - "Rum\xE6nsk"
+      - Romanialainen
+      - "Rom\xE2n\u0103"
+      - Rumensk
+      - "\u03A1\u03BF\u03C5\u03BC\u03B1\u03BD\u03B9\u03BA\u03CC\u03C2"
+      - Rumania
+      - "\u0420\u0443\u043C\u044A\u043D\u0441\u043A\u0438"
+      - "Ng\u01B0\u1EDDi Rumani"
+      - "\u0E42\u0E23\u0E21\u0E32\u0E40\u0E19\u0E35\u0E22"
+      - "\uB8E8\uB9C8\uB2C8\uC544 \uC0AC\uB78C"
+      - "\u30EB\u30FC\u30DE\u30CB\u30A2\u8A9E"
+      - "\u7F57\u9A6C\u5C3C\u4E9A\u8BED"
+      - "\u7F85\u99AC\u5C3C\u4E9E\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Norwegian
+      TermType: 0
+      Description: 
+      Languages:
+      - Norwegian
+      - "Norve\xE7\xE7e"
+      - "\u041D\u043E\u0440\u0432\u0435\u0436\u0441\u043A\u0438\u0439"
+      - Noruego
+      - Noruego
+      - "Noruegu\xEAs"
+      - "Noruegu\xEAs"
+      - Norwegisch
+      - "Norv\xE9gien"
+      - Norweski
+      - Norvegese
+      - "\u041D\u043E\u0440\u0432\u0435\u0437\u044C\u043A\u0430"
+      - "Norsk\xFD"
+      - "Norv\xE9g"
+      - Noors
+      - Norska
+      - Norsk
+      - Norjan Kieli
+      - Norvegian
+      - Norsk
+      - "\u039D\u03BF\u03C1\u03B2\u03B7\u03B3\u03CC\u03C2"
+      - Norwegia
+      - "\u041D\u043E\u0440\u0432\u0435\u0436\u043A\u0438"
+      - "Ng\u01B0\u1EDDi Na Uy"
+      - "\u0E0A\u0E32\u0E27\u0E19\u0E2D\u0E23\u0E4C\u0E40\u0E27\u0E22\u0E4C"
+      - "\uB178\uB974\uC6E8\uC774 \uC778"
+      - "\u30CE\u30EB\u30A6\u30A7\u30FC\u8A9E"
+      - "\u632A\u5A01"
+      - "\u632A\u5A01"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Vietnamese
+      TermType: 0
+      Description: 
+      Languages:
+      - Vietnamese
+      - Vietnamca
+      - "\u0412\u044C\u0435\u0442\u043D\u0430\u043C\u0441\u043A\u0438\u0439"
+      - Vietnamita
+      - Vietnamita
+      - Vietnamita
+      - Vietnamita
+      - Vietnamesisch
+      - Vietnamien
+      - Wietnamski
+      - Vietnamita
+      - "\u0412'\u0454\u0442\u043D\u0430\u043C\u0441\u044C\u043A\u0438\u0439"
+      - "Vietnam\u0161tina"
+      - Vietnami
+      - Vietnamees
+      - Vietnamesiska
+      - Vietnamesisk
+      - Vietnam
+      - Vietnamez
+      - Vietnamesisk
+      - "\u0392\u03B9\u03B5\u03C4\u03BD\u03B1\u03BC\u03AD\u03B6\u03B9\u03BA\u03BF"
+      - Orang Vietnam
+      - "\u0412\u0438\u0435\u0442\u043D\u0430\u043C\u0441\u043A\u0438"
+      - "Ti\u1EBFng Vi\u1EC7t"
+      - "\u0E40\u0E27\u0E35\u0E22\u0E15\u0E19\u0E32\u0E21"
+      - "\uBCA0\uD2B8\uB0A8\uC5B4"
+      - "\u30D9\u30C8\u30CA\u30E0\u8A9E"
+      - "\u8D8A\u5357\u8BED"
+      - "\u8D8A\u5357\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Greek
+      TermType: 0
+      Description: 
+      Languages:
+      - Greek
+      - Yunanca
+      - "\u0413\u0440\u0435\u0447\u0435\u0441\u043A\u0438\u0439"
+      - Griego
+      - Griego
+      - Grego
+      - Grego
+      - Griechisch
+      - Grec
+      - Grecki
+      - Greco
+      - "\u0413\u0440\u0435\u0446\u044C\u043A\u0438\u0439"
+      - "\u0158eck\xFD"
+      - "G\xF6r\xF6g"
+      - Grieks
+      - Grekisk
+      - "Gr\xE6sk"
+      - Kreikkalainen
+      - Grecesc
+      - Gresk
+      - "\u0395\u03BB\u03BB\u03B7\u03BD\u03B9\u03BA\u03AC"
+      - Orang Yunani
+      - "\u0413\u0440\u044A\u0446\u043A\u0438"
+      - "Ng\u01B0\u1EDDi Hy L\u1EA1p"
+      - "\u0E01\u0E23\u0E35\u0E01"
+      - "\uADF8\uB9AC\uC2A4 \uC5B4"
+      - "\u30AE\u30EA\u30B7\u30E3\u8A9E"
+      - "\u5E0C\u814A\u8BED"
+      - "\u5E0C\u81D8\u6587"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Indonesian
+      TermType: 0
+      Description: 
+      Languages:
+      - Indonesian
+      - Endonezce
+      - "\u0418\u043D\u0434\u043E\u043D\u0435\u0437\u0438\u0439\u0441\u043A\u0438\u0439"
+      - Indonesio
+      - Indonesio
+      - "Indon\xE9sio"
+      - "Indon\xE9sio"
+      - Indonesisch
+      - "Indon\xE9sien"
+      - Indonezyjski
+      - Indonesiano
+      - "\u0406\u043D\u0434\u043E\u043D\u0435\u0437\u0456\u0439\u0441\u044C\u043A\u0430"
+      - "Indon\xE9\u0161tina"
+      - "Indon\xE9z"
+      - Indonesisch
+      - Indonesiska
+      - Indonesisk
+      - Indonesialainen
+      - "Indonezian\u0103"
+      - Indonesisk
+      - "\u0399\u03BD\u03B4\u03BF\u03BD\u03B7\u03C3\u03B9\u03B1\u03BA\u03AC"
+      - Bahasa Indonesia
+      - "\u0418\u043D\u0434\u043E\u043D\u0435\u0437\u0438\u0439\u0441\u043A\u0438"
+      - "Ng\u01B0\u1EDDi Indonesia"
+      - "\u0E0A\u0E32\u0E27\u0E2D\u0E34\u0E19\u0E42\u0E14\u0E19\u0E35\u0E40\u0E0B\u0E35\u0E22"
+      - "\uC778\uB3C4\uB124\uC2DC\uC544 \uC778"
+      - "\u30A4\u30F3\u30C9\u30CD\u30B7\u30A2\u4EBA"
+      - "\u5370\u5EA6\u5C3C\u897F\u4E9A"
+      - "\u5370\u5C3C"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Simplified Chinese
+      TermType: 0
+      Description: 
+      Languages:
+      - Simplified Chinese
+      - "Basitle\u015Ftirilmi\u015F \xC7ince"
+      - "\u0423\u043F\u0440\u043E\u0449\u0435\u043D\u043D\u044B\u0439 \u041A\u0438\u0442\u0430\u0439\u0441\u043A\u0438\u0439"
+      - Chino Simplificado
+      - Chino Simplificado
+      - "Chin\xEAs Simplificado"
+      - "Chin\xEAs Simplificado"
+      - Vereinfachtes Chinesisch
+      - "Chinois Simplifi\xE9"
+      - "Chi\u0144ski Uproszczony"
+      - Cinese Semplificato
+      - "\u0421\u043F\u0440\u043E\u0449\u0435\u043D\u0430 \u041A\u0438\u0442\u0430\u0439\u0441\u044C\u043A\u0430"
+      - "Zjednodu\u0161en\xE1 \u010C\xEDn\u0161tina"
+      - "Egyszer\u0171s\xEDtett K\xEDnai"
+      - Vereenvoudigd Chinees
+      - "F\xF6renklad Kinesiska"
+      - Forenklet Kinesisk
+      - Yksinkertaistettu Kiina
+      - "Chinez\u0103 Simplificat\u0103"
+      - Forenklet Kinesisk
+      - "\u0391\u03C0\u03BB\u03BF\u03C0\u03BF\u03B9\u03B7\u03BC\u03AD\u03BD\u03B1
+        \u039A\u03B9\u03BD\u03AD\u03B6\u03B9\u03BA\u03B1"
+      - Cina Disederhanakan
+      - "\u041E\u043F\u0440\u043E\u0441\u0442\u0435\u043D \u041A\u0438\u0442\u0430\u0439\u0441\u043A\u0438"
+      - "Ti\u1EBFng Trung Gi\u1EA3n Th\u1EC3"
+      - "\u0E08\u0E35\u0E19\u0E15\u0E31\u0E27\u0E22\u0E48\u0E2D"
+      - "\uC911\uAD6D\uC5B4 \uAC04\uCCB4"
+      - "\u7C21\u4F53\u5B57\u4E2D\u56FD\u8A9E"
+      - "\u7B80\u4F53\u4E2D\u6587"
+      - "\u7C21\u9AD4\u4E2D\u6587"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Spanish - Spain
+      TermType: 0
+      Description: 
+      Languages:
+      - Spanish - Spain
+      - "\u0130spanyolca - \u0130spanya"
+      - "\u0418\u0441\u043F\u0430\u043D\u0441\u043A\u0438\u0439 - \u0418\u0441\u043F\u0430\u043D\u0438\u044F"
+      - "Espa\xF1ol - Espa\xF1a"
+      - "Espa\xF1ol - Espa\xF1a"
+      - Espanhol - Espanha
+      - Espanhol - Espanha
+      - Spanisch - Spanien
+      - Espagnol - Espagne
+      - "Hiszpa\u0144ski - Hiszpania"
+      - Spagnolo - Spagna
+      - "\u0406\u0441\u043F\u0430\u043D\u0441\u044C\u043A\u0438\u0439 - \u0406\u0441\u043F\u0430\u043D\u0456\u044F"
+      - "\u0160pan\u011Bl\u0161tina - \u0160pan\u011Blsko"
+      - "Spanyol - Spanyolorsz\xE1g"
+      - Spaans - Spanje
+      - Spanska - Spanien
+      - Spansk - Spanien
+      - Espanja - Espanja
+      - Spaniola - Spania
+      - Spansk - Spania
+      - "\u0399\u03C3\u03C0\u03B1\u03BD\u03B9\u03BA\u03AC - \u0399\u03C3\u03C0\u03B1\u03BD\u03AF\u03B1"
+      - Spanyol - Spanyol
+      - "\u0418\u0441\u043F\u0430\u043D\u0441\u043A\u0438 - \u0418\u0441\u043F\u0430\u043D\u0438\u044F"
+      - "T\xE2y Ban Nha - T\xE2y Ban Nha"
+      - "\u0E2A\u0E40\u0E1B\u0E19 - \u0E2A\u0E40\u0E1B\u0E19"
+      - "\uC2A4\uD398\uC778\uC5B4 - \uC2A4\uD398\uC778"
+      - "\u30B9\u30DA\u30A4\u30F3\u8A9E - \u30B9\u30DA\u30A4\u30F3"
+      - "\u897F\u73ED\u7259\u8BED - \u897F\u73ED\u7259"
+      - "\u897F\u73ED\u7259\u8A9E - \u897F\u73ED\u7259"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Portuguese - Brazil
+      TermType: 0
+      Description: 
+      Languages:
+      - Portuguese - Brazil
+      - Portekizce - Brezilya
+      - "\u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u044C\u0441\u043A\u0438\u0439
+        - \u0411\u0440\u0430\u0437\u0438\u043B\u0438\u044F"
+      - "Portugu\xE9s - Brasil"
+      - "Portugu\xE9s - Brasil"
+      - "Portugu\xEAs - Brasil"
+      - "Portugu\xEAs - Brasil"
+      - Portugiesisch (Brasilien
+      - "Portugais - Br\xE9sil"
+      - Portugalski - Brazylia
+      - Portoghese - Brasile
+      - "\u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u044C\u0441\u044C\u043A\u0430
+        - \u0411\u0440\u0430\u0437\u0438\u043B\u0456\u044F"
+      - "Portugal\u0161tina - Braz\xEDlie"
+      - "Portug\xE1l - Brazil"
+      - "Portugees - Brazili\xEB"
+      - Portugisiska - Brasilien
+      - Portugisisk - Brasilien
+      - Portugali - Brasilia
+      - "Portughez\u0103 - Brazilia"
+      - Portugisisk - Brasil
+      - "\u03A0\u03BF\u03C1\u03C4\u03BF\u03B3\u03B1\u03BB\u03B9\u03BA\u03AC - \u0392\u03C1\u03B1\u03B6\u03B9\u03BB\u03AF\u03B1"
+      - Portugis - Brasil
+      - "\u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u0441\u043A\u0438 - \u0411\u0440\u0430\u0437\u0438\u043B\u0438\u044F"
+      - "B\u1ED3 \u0110\xE0o Nha - Brazil"
+      - "\u0E42\u0E1B\u0E23\u0E15\u0E38\u0E40\u0E01\u0E2A-\u0E1A\u0E23\u0E32\u0E0B\u0E34\u0E25"
+      - "\uD3EC\uB974\uD22C\uAC08\uC5B4-\uBE0C\uB77C\uC9C8"
+      - "\u30DD\u30EB\u30C8\u30AC\u30EB\u8A9E - \u30D6\u30E9\u30B8\u30EB"
+      - "\u8461\u8404\u7259\u8BED - \u5DF4\u897F"
+      - "\u8461\u8404\u7259\u8A9E - \u5DF4\u897F"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Traditional Chinese
+      TermType: 0
+      Description: 
+      Languages:
+      - Traditional Chinese
+      - "Geleneksel \xC7ince"
+      - "\u0422\u0440\u0430\u0434\u0438\u0446\u0438\u043E\u043D\u043D\u044B\u0439
+        \u041A\u0438\u0442\u0430\u0439\u0441\u043A\u0438\u0439"
+      - Chino Tradicional
+      - Chino Tradicional
+      - "Chin\xEAs Tradicional"
+      - "Chin\xEAs Tradicional"
+      - Traditionelles Chinesisch
+      - Chinois Traditionnel
+      - "Tradycyjne Chi\u0144skie"
+      - Cinese Tradizionale
+      - "\u0422\u0440\u0430\u0434\u0438\u0446\u0456\u0439\u043D\u0430 \u041A\u0438\u0442\u0430\u0439\u0441\u044C\u043A\u0430"
+      - "Tradi\u010Dn\xED \u010C\xEDn\u0161tina"
+      - "Tradicion\xE1lis K\xEDnai"
+      - Traditioneel Chinees
+      - Traditionell Kinesiska
+      - Traditionelt Kinesisk
+      - Perinteinen Kiina
+      - "Chinez\u0103 Tradi\u021Bional\u0103"
+      - Tradisjonell Kinesisk
+      - "\u03A0\u03B1\u03C1\u03B1\u03B4\u03BF\u03C3\u03B9\u03B1\u03BA\u03AC \u039A\u03B9\u03BD\u03B5\u03B6\u03B9\u03BA\u03AC"
+      - Cina Tradisional
+      - "\u0422\u0440\u0430\u0434\u0438\u0446\u0438\u043E\u043D\u0435\u043D \u041A\u0438\u0442\u0430\u0439\u0441\u043A\u0438"
+      - "Truy\u1EC1n Th\u1ED1ng Trung Qu\u1ED1c"
+      - "\u0E08\u0E35\u0E19\u0E14\u0E31\u0E49\u0E07\u0E40\u0E14\u0E34\u0E21"
+      - "\uC911\uAD6D\uC5B4 \uBC88\uCCB4"
+      - "\u7E41\u4F53\u5B57\u4E2D\u56FD\u8A9E"
+      - "\u7E41\u4F53\u4E2D\u6587"
+      - "\u7E41\u9AD4\u4E2D\u6587"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Portuguese - Portugal
+      TermType: 0
+      Description: 
+      Languages:
+      - Portuguese - Portugal
+      - Portekizce - Portekiz
+      - "\u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u044C\u0441\u043A\u0438\u0439
+        - \u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u0438\u044F"
+      - "Portugu\xE9s - Portugal"
+      - "Portugu\xE9s - Portugal"
+      - "Portugu\xEAs - Portugal"
+      - "Portugu\xEAs - Portugal"
+      - Portugiesisch - Portugal
+      - Portugais - Portugal
+      - Portugalski - Portugalia
+      - Portoghese - Portogallo
+      - "\u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u044C\u0441\u044C\u043A\u0430
+        - \u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u0456\u044F"
+      - "Portugal\u0161tina - Portugalsko"
+      - "Portug\xE1l - Portug\xE1lia"
+      - Portugees - Portugal
+      - Portugisiska - Portugisiska
+      - Portugisisk - Portugal
+      - Portugali - Portugali
+      - "Portughez\u0103 (Portugalia"
+      - Portugisisk - Portugal
+      - "\u03A0\u03BF\u03C1\u03C4\u03BF\u03B3\u03B1\u03BB\u03B9\u03BA\u03AC - \u03A0\u03BF\u03C1\u03C4\u03BF\u03B3\u03B1\u03BB\u03AF\u03B1"
+      - Portugis - Portugal
+      - "\u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u0441\u043A\u0438 - \u041F\u043E\u0440\u0442\u0443\u0433\u0430\u043B\u0438\u044F"
+      - "B\u1ED3 \u0110\xE0o Nha - B\u1ED3 \u0110\xE0o Nha"
+      - "\u0E42\u0E1B\u0E23\u0E15\u0E38\u0E40\u0E01\u0E2A - \u0E42\u0E1B\u0E23\u0E15\u0E38\u0E40\u0E01\u0E2A"
+      - "\uD3EC\uB974\uD22C\uAC08\uC5B4 - \uD3EC\uB974\uD22C\uAC08\uC5B4"
+      - "\u30DD\u30EB\u30C8\u30AC\u30EB\u8A9E - \u30DD\u30EB\u30C8\u30AC\u30EB\u8A9E"
+      - "\u8461\u8404\u7259\u8BED - \u8461\u8404\u7259\u8BED"
+      - "\u8461\u8404\u7259\u8A9E - \u8461\u8404\u7259\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Spanish - Latin America
+      TermType: 0
+      Description: 
+      Languages:
+      - Spanish - Latin America
+      - "\u0130spanyolca - Latin Amerika"
+      - "\u0418\u0441\u043F\u0430\u043D\u0441\u043A\u0438\u0439 - \u041B\u0430\u0442\u0438\u043D\u0441\u043A\u0430\u044F
+        \u0410\u043C\u0435\u0440\u0438\u043A\u0430"
+      - "Espa\xF1ol - Am\xE9rica Latina"
+      - "Espa\xF1ol - Am\xE9rica Latina"
+      - "Espanhol - Am\xE9rica Latina"
+      - "Espanhol - Am\xE9rica Latina"
+      - Spanisch - Lateinamerika
+      - "Espagnol - Am\xE9rique Latine"
+      - "Hiszpa\u0144sko \u2013 Ameryka \u0141aci\u0144ska"
+      - Spagnolo - America Latina
+      - "\u0406\u0441\u043F\u0430\u043D\u0441\u044C\u043A\u0430 - \u041B\u0430\u0442\u0438\u043D\u0441\u044C\u043A\u0430
+        \u0410\u043C\u0435\u0440\u0438\u043A\u0430"
+      - "\u0160pan\u011Bl\u0161tina - Latinsk\xE1 Amerika"
+      - Spanyol - Latin Amerika
+      - Spaans - Latijns-Amerika
+      - Spanska - Latinamerika
+      - Spansk - Latinamerika
+      - Espanja - Latinalainen Amerikka
+      - "Spaniol\u0103 - America Latin\u0103"
+      - Spansk - Latin-Amerika
+      - "\u0399\u03C3\u03C0\u03B1\u03BD\u03B9\u03BA\u03AC - \u039B\u03B1\u03C4\u03B9\u03BD\u03B9\u03BA\u03AE
+        \u0391\u03BC\u03B5\u03C1\u03B9\u03BA\u03AE"
+      - Spanyol - Amerika Latin
+      - "\u0418\u0441\u043F\u0430\u043D\u0441\u043A\u0438 - \u041B\u0430\u0442\u0438\u043D\u0441\u043A\u0430
+        \u0410\u043C\u0435\u0440\u0438\u043A\u0430"
+      - "T\xE2y Ban Nha - M\u1EF9 Latinh"
+      - "\u0E2A\u0E40\u0E1B\u0E19 - \u0E25\u0E30\u0E15\u0E34\u0E19\u0E2D\u0E40\u0E21\u0E23\u0E34\u0E01\u0E32"
+      - "\uC2A4\uD398\uC778\uC5B4-\uB77C\uD2F4 \uC544\uBA54\uB9AC\uCE74"
+      - "\u30B9\u30DA\u30A4\u30F3\u8A9E - \u30E9\u30C6\u30F3\u30A2\u30E1\u30EA\u30AB"
+      - "\u897F\u73ED\u7259\u8BED - \u62C9\u4E01\u7F8E\u6D32"
+      - "\u897F\u73ED\u7259\u8A9E - \u62C9\u4E01\u7F8E\u6D32"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Graphics Settings/Very Low
+      TermType: 0
+      Description: 
+      Languages:
+      - Very Low
+      - "\xC7ok D\xFC\u015F\xFCk"
+      - "\u041E\u0447\u0435\u043D\u044C \u041D\u0438\u0437\u043A\u0438\u0439"
+      - Muy Bajo
+      - Muy Bajo
+      - Muito Baixo
+      - Muito Baixo
+      - Sehr Niedrig
+      - "Tr\xE8s Lent"
+      - Bardzo Niski
+      - Molto Basso
+      - "\u0414\u0443\u0436\u0435 \u041D\u0438\u0437\u044C\u043A\u0438\u0439"
+      - "Velmi N\xEDzk\xFD"
+      - Nagyon Alacsony
+      - Heel Laag
+      - "V\xE4ldigt L\xE5g"
+      - Meget Lav
+      - "Eritt\xE4in Matala"
+      - Foarte Jos
+      - Veldig Lav
+      - "\u03A0\u03BF\u03BB\u03CD \u03A7\u03B1\u03BC\u03B7\u03BB\u03AC"
+      - Sangat Rendah
+      - "\u041C\u043D\u043E\u0433\u043E \u041D\u0438\u0441\u043A\u043E"
+      - "R\u1EA5t Th\u1EA5p"
+      - "\u0E15\u0E48\u0E33\u0E21\u0E32\u0E01"
+      - "\uB9E4\uC6B0 \uB0AE\uC740"
+      - "\u3068\u3066\u3082\u4F4E\u3044"
+      - "\u975E\u5E38\u4F4E"
+      - "\u975E\u5E38\u4F4E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Language/Bulgarian
+      TermType: 0
+      Description: 
+      Languages:
+      - Bulgarian
+      - Bulgarca
+      - "\u0411\u043E\u043B\u0433\u0430\u0440\u0441\u043A\u0438\u0439"
+      - "B\xFAlgaro"
+      - "B\xFAlgaro"
+      - "B\xFAlgaro"
+      - "B\xFAlgaro"
+      - Bulgarisch
+      - Bulgare
+      - "Bu\u0142garski"
+      - Bulgaro
+      - "\u0411\u043E\u043B\u0433\u0430\u0440\u0441\u044C\u043A\u0430"
+      - "Bulharsk\xFD"
+      - "Bolg\xE1r"
+      - Bulgaars
+      - Bulgariska
+      - Bulgarsk
+      - Bulgarialainen
+      - "Bulgar\u0103"
+      - Bulgarsk
+      - "\u0392\u03BF\u03CD\u03BB\u03B3\u03B1\u03C1\u03BF\u03C2"
+      - Bulgaria
+      - "\u0411\u044A\u043B\u0433\u0430\u0440\u0441\u043A\u0438"
+      - "Ti\u1EBFng Bungari"
+      - "\u0E1A\u0E31\u0E25\u0E41\u0E01\u0E40\u0E23\u0E35\u0E22"
+      - "\uBD88\uAC00\uB9AC\uC544 \uC0AC\uB78C"
+      - "\u30D6\u30EB\u30AC\u30EA\u30A2\u8A9E"
+      - "\u4FDD\u52A0\u5229\u4E9A\u8BED"
+      - "\u4FDD\u52A0\u5229\u4E9E\u8A9E"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Settings/Graphics settings changed.
+      TermType: 0
+      Description: 
+      Languages:
+      - Graphics settings changed.
+      - "Grafik ayarlar\u0131 de\u011Fi\u015Ftirildi."
+      - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u0433\u0440\u0430\u0444\u0438\u043A\u0438
+        \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u044B."
+      - "La configuraci\xF3n de gr\xE1ficos cambi\xF3."
+      - "La configuraci\xF3n de gr\xE1ficos cambi\xF3."
+      - "As configura\xE7\xF5es gr\xE1ficas foram alteradas."
+      - "As configura\xE7\xF5es gr\xE1ficas foram alteradas."
+      - "Grafikeinstellungen ge\xE4ndert."
+      - "Les param\xE8tres graphiques ont \xE9t\xE9 modifi\xE9s."
+      - Zmieniono ustawienia graficzne.
+      - Le impostazioni grafiche sono cambiate.
+      - "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F
+        \u0433\u0440\u0430\u0444\u0456\u043A\u0438 \u0437\u043C\u0456\u043D\u0435\u043D\u043E."
+      - "Nastaven\xED grafiky zm\u011Bn\u011Bno."
+      - "A grafikus be\xE1ll\xEDt\xE1sok megv\xE1ltoztak."
+      - Grafische instellingen gewijzigd.
+      - "Grafikinst\xE4llningar \xE4ndrade."
+      - "Grafikindstillinger \xE6ndret."
+      - Grafiikkaasetukset muutettu.
+      - "Set\u0103rile grafice au fost schimbate."
+      - Grafikkinnstillinger endret.
+      - "\u039F\u03B9 \u03C1\u03C5\u03B8\u03BC\u03AF\u03C3\u03B5\u03B9\u03C2 \u03B3\u03C1\u03B1\u03C6\u03B9\u03BA\u03CE\u03BD
+        \u03AC\u03BB\u03BB\u03B1\u03BE\u03B1\u03BD."
+      - Pengaturan grafis berubah.
+      - "\u0413\u0440\u0430\u0444\u0438\u0447\u043D\u0438\u0442\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438
+        \u0441\u0430 \u043F\u0440\u043E\u043C\u0435\u043D\u0435\u043D\u0438."
+      - "C\xE0i \u0111\u1EB7t \u0111\u1ED3 h\u1ECDa \u0111\xE3 thay \u0111\u1ED5i."
+      - "\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32\u0E01\u0E23\u0E32\u0E1F\u0E34\u0E01\u0E21\u0E35\u0E01\u0E32\u0E23\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E41\u0E1B\u0E25\u0E07"
+      - "\uADF8\uB798\uD53D \uC124\uC815\uC774 \uBCC0\uACBD\uB418\uC5C8\uC2B5\uB2C8\uB2E4."
+      - "\u30B0\u30E9\u30D5\u30A3\u30C3\u30AF\u8A2D\u5B9A\u304C\u5909\u66F4\u3055\u308C\u307E\u3057\u305F\u3002"
+      - "\u56FE\u5F62\u8BBE\u7F6E\u5DF2\u66F4\u6539\u3002"
+      - "\u5716\u5F62\u8A2D\u5B9A\u5DF2\u66F4\u6539\u3002"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Settings/Language settings changed.
+      TermType: 0
+      Description: 
+      Languages:
+      - Language settings changed.
+      - "Dil ayarlar\u0131 de\u011Fi\u015Ftirildi."
+      - "\u042F\u0437\u044B\u043A\u043E\u0432\u044B\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438
+        \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u044B."
+      - "La configuraci\xF3n de idioma cambi\xF3."
+      - "La configuraci\xF3n de idioma cambi\xF3."
+      - "As configura\xE7\xF5es de idioma foram alteradas."
+      - "As configura\xE7\xF5es de idioma foram alteradas."
+      - "Spracheinstellungen ge\xE4ndert."
+      - "Les param\xE8tres de langue ont \xE9t\xE9 modifi\xE9s."
+      - "Ustawienia j\u0119zyka zosta\u0142y zmienione."
+      - Le impostazioni della lingua sono cambiate.
+      - "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F
+        \u043C\u043E\u0432\u0438 \u0437\u043C\u0456\u043D\u0435\u043D\u043E."
+      - "Nastaven\xED jazyka se zm\u011Bnilo."
+      - "A nyelvi be\xE1ll\xEDt\xE1sok megv\xE1ltoztak."
+      - Taalinstellingen gewijzigd.
+      - "Spr\xE5kinst\xE4llningar har \xE4ndrats."
+      - "Sprogindstillingerne er \xE6ndret."
+      - Kieliasetukset muutettu.
+      - "Set\u0103rile de limb\u0103 au fost schimbate."
+      - "Spr\xE5kinnstillingene endret."
+      - "\u039F\u03B9 \u03C1\u03C5\u03B8\u03BC\u03AF\u03C3\u03B5\u03B9\u03C2 \u03B3\u03BB\u03CE\u03C3\u03C3\u03B1\u03C2
+        \u03AC\u03BB\u03BB\u03B1\u03BE\u03B1\u03BD."
+      - Pengaturan bahasa berubah.
+      - "\u0415\u0437\u0438\u043A\u043E\u0432\u0438\u0442\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438
+        \u0441\u0430 \u043F\u0440\u043E\u043C\u0435\u043D\u0435\u043D\u0438."
+      - "C\xE0i \u0111\u1EB7t ng\xF4n ng\u1EEF \u0111\xE3 thay \u0111\u1ED5i."
+      - "\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32\u0E20\u0E32\u0E29\u0E32\u0E21\u0E35\u0E01\u0E32\u0E23\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E41\u0E1B\u0E25\u0E07"
+      - "\uC5B8\uC5B4 \uC124\uC815\uC774 \uBCC0\uACBD\uB418\uC5C8\uC2B5\uB2C8\uB2E4."
+      - "\u8A00\u8A9E\u8A2D\u5B9A\u304C\u5909\u66F4\u3055\u308C\u307E\u3057\u305F\u3002"
+      - "\u8BED\u8A00\u8BBE\u7F6E\u5DF2\u66F4\u6539\u3002"
+      - "\u8A9E\u8A00\u8A2D\u5B9A\u5DF2\u66F4\u6539\u3002"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Font/NotoSans-Regular SDF
+      TermType: 9
+      Description: 
+      Languages:
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSans-Regular SDF
+      - NotoSerifThai-Regular SDF
+      - NotoSerifKR-Regular SDF
+      - NotoSansJP-Regular SDF
+      - NotoSansSC-Regular SDF
+      - NotoSansTC-Regular SDF
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Main Menu/Continue
+      TermType: 0
+      Description: 
+      Languages:
+      - Continue
+      - Devam Et
+      - "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0442\u044C"
+      - Continuar
+      - Continuar
+      - Continuar
+      - Continuar
+      - Weitermachen
+      - Continuer
+      - "Kontynuowa\u0107"
+      - Continua
+      - "\u041F\u0440\u043E\u0434\u043E\u0432\u0436\u0443\u0432\u0430\u0442\u0438"
+      - "Pokra\u010Dovat"
+      - Folytatni
+      - Doorgaan
+      - "Forts\xE4tta"
+      - Blive Ved
+      - Jatkaa
+      - Continua
+      - Fortsette
+      - "\u039D\u03B1 \u03A3\u03C5\u03BD\u03B5\u03C7\u03AF\u03C3\u03B5\u03B9"
+      - Melanjutkan
+      - "\u041F\u0440\u043E\u0434\u044A\u043B\u0436\u0438"
+      - "Ti\u1EBFp T\u1EE5c"
+      - "\u0E14\u0E33\u0E40\u0E19\u0E34\u0E19\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D"
+      - "\uACC4\uC18D\uD558\uB2E4"
+      - "\u7D9A\u304F"
+      - "\u7EE7\u7EED"
+      - "\u7E7C\u7E8C"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Main Menu/Return to Main Menu
+      TermType: 0
+      Description: 
+      Languages:
+      - Return to main menu
+      - "Ana men\xFCye d\xF6n"
+      - "\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
+        \u043C\u0435\u043D\u044E"
+      - "Volver al men\xFA principal"
+      - "Volver al men\xFA principal"
+      - Voltar ao menu principal
+      - Voltar ao menu principal
+      - "Zur\xFCck zum Hauptmen\xFC"
+      - Retour au menu principal
+      - "Powr\xF3t do menu g\u0142\xF3wnego"
+      - Ritorna al menu principale
+      - "\u041F\u043E\u0432\u0435\u0440\u043D\u0435\u043D\u043D\u044F \u0434\u043E
+        \u0433\u043E\u043B\u043E\u0432\u043D\u043E\u0433\u043E \u043C\u0435\u043D\u044E"
+      - "N\xE1vrat do hlavn\xED nab\xEDdky"
+      - "Vissza a f\u0151men\xFCbe"
+      - Keer terug naar het hoofdmenu
+      - "\xC5terg\xE5 till huvudmenyn"
+      - Vend tilbage til hovedmenuen
+      - "Palaa p\xE4\xE4valikkoon"
+      - "Reveni\u021Bi la meniul principal"
+      - "G\xE5 tilbake til hovedmenyen"
+      - "\u0395\u03C0\u03B9\u03C3\u03C4\u03C1\u03BF\u03C6\u03AE \u03C3\u03C4\u03BF
+        \u03BA\u03CD\u03C1\u03B9\u03BF \u03BC\u03B5\u03BD\u03BF\u03CD"
+      - Kembali ke menu utama
+      - "\u0412\u044A\u0440\u043D\u0435\u0442\u0435 \u0441\u0435 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0442\u043E
+        \u043C\u0435\u043D\u044E"
+      - "Quay l\u1EA1i th\u1EF1c \u0111\u01A1n ch\xEDnh"
+      - "\u0E01\u0E25\u0E31\u0E1A\u0E2A\u0E39\u0E48\u0E40\u0E21\u0E19\u0E39\u0E2B\u0E25\u0E31\u0E01"
+      - "\uBA54\uC778 \uBA54\uB274\uB85C \uB3CC\uC544\uAC00\uAE30"
+      - "\u30E1\u30A4\u30F3\u30E1\u30CB\u30E5\u30FC\u306B\u623B\u308B"
+      - "\u8FD4\u56DE\u4E3B\u83DC\u5355"
+      - "\u8FD4\u56DE\u4E3B\u9078\u55AE"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    - Term: Player HUD/Player Interaction
+      TermType: 0
+      Description: 
+      Languages:
+      - Press {[INPUT_KEY]} to interact
+      - "Etkile\u015Fim i\xE7in {[INPUT_KEY]} tu\u015Funa bas\u0131n"
+      - "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 {[INPUT_KEY]} \u0434\u043B\u044F
+        \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F"
+      - Pulsa {[INPUT_KEY]} para interactuar
+      - Pulsa {[INPUT_KEY]} para interactuar
+      - Pressione {[INPUT_KEY]} para interagir
+      - Pressione {[INPUT_KEY]} para interagir
+      - "Dr\xFCcken Sie {[INPUT_KEY]}, um zu interagieren"
+      - Appuyez sur {[INPUT_KEY]} pour interagir
+      - "Naci\u015Bnij {[INPUT_KEY]}, aby wej\u015B\u0107 w interakcj\u0119"
+      - Premi {[INPUT_KEY]} per interagire
+      - "\u041D\u0430\u0442\u0438\u0441\u043D\u0456\u0442\u044C {[INPUT_KEY]}, \u0449\u043E\u0431
+        \u0432\u0437\u0430\u0454\u043C\u043E\u0434\u0456\u044F\u0442\u0438"
+      - "Pro interakci stiskn\u011Bte {[INPUT_KEY]}"
+      - "Nyomja meg a {[INPUT_KEY]} gombot az interakci\xF3hoz"
+      - Druk op {[INPUT_KEY]} voor interactie
+      - "Tryck p\xE5 {[INPUT_KEY]} f\xF6r att interagera"
+      - "Tryk p\xE5 {[INPUT_KEY]} for at interagere"
+      - Paina {[INPUT_KEY]} ollaksesi vuorovaikutuksessa
+      - "Ap\u0103sa\u021Bi {[INPUT_KEY]} pentru a interac\u021Biona"
+      - "Trykk p\xE5 {[INPUT_KEY]} for \xE5 samhandle"
+      - "\u03A0\u03B1\u03C4\u03AE\u03C3\u03C4\u03B5 {[INPUT_KEY]} \u03B3\u03B9\u03B1
+        \u03B1\u03BB\u03BB\u03B7\u03BB\u03B5\u03C0\u03AF\u03B4\u03C1\u03B1\u03C3\u03B7"
+      - Tekan {[INPUT_KEY]} untuk berinteraksi
+      - "\u041D\u0430\u0442\u0438\u0441\u043D\u0435\u0442\u0435 {[INPUT_KEY]} \u0437\u0430
+        \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435"
+      - "Nh\u1EA5n {[INPUT_KEY]} \u0111\u1EC3 t\u01B0\u01A1ng t\xE1c"
+      - "\u0E01\u0E14 {[INPUT_KEY]} \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E42\u0E15\u0E49\u0E15\u0E2D\u0E1A"
+      - "\uC0C1\uD638\uC791\uC6A9\uD558\uB824\uBA74 {[INPUT_KEY]}\uB97C \uB204\uB974\uC138\uC694."
+      - "{[INPUT_KEY]} \u3092\u62BC\u3057\u3066\u5BFE\u8A71\u3057\u307E\u3059"
+      - "\u6309{[INPUT_KEY]}\u8FDB\u884C\u4E92\u52A8"
+      - "\u6309{[INPUT_KEY]}\u9032\u884C\u4E92\u52D5"
+      Flags: 0000000000000000000000000000000000000000000000000000000000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 2
+    mTerm_AppName: 
+    mLanguages:
+    - Name: English
+      Code: en
+      Flags: 0
+    - Name: Turkish
+      Code: tr
+      Flags: 0
+    - Name: Russian
+      Code: ru
+      Flags: 0
+    - Name: Spanish - Spain
+      Code: es-ES
+      Flags: 0
+    - Name: Spanish - Latin America
+      Code: es-US
+      Flags: 0
+    - Name: Portuguese - Brazil
+      Code: pt-BR
+      Flags: 0
+    - Name: Portuguese - Portugal
+      Code: pt-PT
+      Flags: 0
+    - Name: German
+      Code: de
+      Flags: 0
+    - Name: French
+      Code: fr
+      Flags: 0
+    - Name: French
+      Code: pl
+      Flags: 0
+    - Name: Italian
+      Code: it
+      Flags: 0
+    - Name: Ukrainian
+      Code: uk
+      Flags: 0
+    - Name: Czech
+      Code: cs
+      Flags: 0
+    - Name: Hungarian
+      Code: hu
+      Flags: 0
+    - Name: Dutch
+      Code: nl
+      Flags: 0
+    - Name: Swedish
+      Code: sv
+      Flags: 0
+    - Name: Danish
+      Code: da
+      Flags: 0
+    - Name: Finnish
+      Code: fi
+      Flags: 0
+    - Name: Romanian
+      Code: ro
+      Flags: 0
+    - Name: Norwegian
+      Code: nb
+      Flags: 0
+    - Name: Greek
+      Code: el
+      Flags: 0
+    - Name: Indonesian
+      Code: id
+      Flags: 0
+    - Name: Bulgarian
+      Code: bg
+      Flags: 0
+    - Name: Vietnamese
+      Code: vi
+      Flags: 0
+    - Name: Thai
+      Code: th
+      Flags: 0
+    - Name: Korean
+      Code: ko
+      Flags: 0
+    - Name: Japanese
+      Code: ja
+      Flags: 0
+    - Name: Simplified Chinese
+      Code: zh-CN
+      Flags: 0
+    - Name: Traditional Chinese
+      Code: zh-TW
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbw120AjsiPyNMW5_XhMJHKL6txEHgQJB3iPN5niF31U-mk3ycKMR5ZfjvmOq1C4NLOW/exec
+    Google_SpreadsheetKey: 
+    Google_SpreadsheetName: 
+    Google_LastUpdatedVersion: 
+    Google_Password: mavera3162
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets:
+    - {fileID: 11400000, guid: ff2dcc6acc32d81458018adf77ca6ec2, type: 2}
+    - {fileID: 11400000, guid: 0234a8dcd7e09674e8724308675c324d, type: 2}
+    - {fileID: 11400000, guid: 131cf7dd4782af745b991d55ed9df0bb, type: 2}
+    - {fileID: 11400000, guid: 1de0d94a8a65edf45b0b386ab30a3ff8, type: 2}
+    - {fileID: 11400000, guid: 6a92cb7fd2ff51643a4adfbe5b9cc0d3, type: 2}
+    - {fileID: 11400000, guid: 7ea17f9bd6bde2348ac2a178464399bf, type: 2}
+    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1
+    Spreadsheet_SortRows: 1

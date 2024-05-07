@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89973959f6e8a5d4d8626c3ca6fb2f22, type: 3}
+  m_Name: PlayerSettingsInstaller
+  m_EditorClassIdentifier: 
+  PlayerMovementSettings:
+    CanMove: 1
+    IsUnderwater: 1
+    CurrentMoveSpeed: 0
+    WalkingSpeed: 4
+    RunningSpeed: 12
+    SwimThreshold: 1
+    JumpForce: 3
+    Gravity: 9.81
+    GroundCheckDistance: 0.25
+    CanLook: 1
+    UpDownRange: 80
+    LookSensitivity: 0.1
+  PlayerInteractionSettings:
+    RayCastFrequency: 0.1
+    CanInteract: 1
+    InteractionRange: 5
+    InteractLayer:
+      serializedVersion: 2
+      m_Bits: 128
+    ShowDebugRay: 1
+    DebugRayColor: {r: 0, g: 0, b: 1, a: 1}
