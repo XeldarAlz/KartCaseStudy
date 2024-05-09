@@ -1,4 +1,5 @@
 # KartCaseStudy
+![ezgif-3-6049f40522](https://github.com/XeldarAlz/KartCaseStudy/assets/15848661/f8c1f936-df9b-42c1-b115-8104eea8991e)
 
 # Ön Bilgi
 
