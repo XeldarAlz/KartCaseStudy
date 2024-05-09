@@ -3,7 +3,7 @@
 
 # Ön Bilgi
 
-Unity 2022.3.26f1 versiyonu ile yapıldı. Oynanmaya hazır 84MB android APK buildi Playable klasörüne eklendi.
+Proje yapımına 6 Mayıs 2024 Tarihinde başlandı. Unity 2022.3.26f1 versiyonu ile yapıldı. Oynanmaya hazır 84MB android APK buildi Playable klasörüne eklendi.
 
 # Ne İçeriyor?
 
