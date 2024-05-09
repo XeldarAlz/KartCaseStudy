@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using KartGame.KartSystems;
+using KartSystem.KartSystems;
 using UnityEngine;
 
-namespace KartGame.Track
+namespace KartSystem.Track
 {
     /// <summary>
     /// Should be implemented by things that take part in a race.  Allows for data to be collected about the timings of the race.  Default implementation is the Racer MonoBehaviour.

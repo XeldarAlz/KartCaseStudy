@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Playables;
 
-namespace KartGame.Timeline
+namespace KartSystem.Timeline
 {
     /// <summary>
     /// A MonoBehaviour that has UnityEvents for when a timeline starts and ends which are triggered automatically.

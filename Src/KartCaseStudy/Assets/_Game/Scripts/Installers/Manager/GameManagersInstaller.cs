@@ -14,7 +14,6 @@ namespace Game.Installers
         {
             Container.Bind<GameStateManager>().AsSingle().NonLazy();
             Container.Bind<GameEventManager>().AsSingle().NonLazy();
-            Container.Bind<GameCurrencyManager>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<GlobalGameManager>().AsSingle().NonLazy();
             Container.Bind<GameSceneManager>().FromComponentInHierarchy(_gameSceneManager).AsSingle().NonLazy();
             Container.Bind<GameInputManager>().FromComponentInHierarchy(_gameInputManager).AsSingle().NonLazy();

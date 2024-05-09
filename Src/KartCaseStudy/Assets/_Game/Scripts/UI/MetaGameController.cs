@@ -1,7 +1,7 @@
-using KartGame.Timeline;
+using KartSystem.Timeline;
 using UnityEngine;
 
-namespace KartGame.UI
+namespace KartSystem.UI
 {
     /// <summary>
     /// The MetaGameController is responsible for switching control between the high level
@@ -13,61 +13,21 @@ namespace KartGame.UI
         public MainUIController mainMenu;
         [Tooltip("A reference to the race countdown director trigger.")]
         public DirectorTrigger raceCountdownTrigger;
-        [Tooltip("The UI canvases used for game play.")]
-        public Canvas[] gamePlayCanvasii;
 
-        bool m_ShowMainCanvas = true;
-        bool m_FirstTime = true;
+        private bool _firstTime = true;
 
-        void OnEnable()
+        private void Start()
         {
-            _ToggleMainMenu(m_ShowMainCanvas);
-        }
-
-        void Start()
-        {
-            //Start the game immediately rather than show the pause menu.
             HandleMenuButton();
         }
 
-        /// <summary>
-        /// Turns the main menu on or off.
-        /// </summary>
-        public void ToggleMainMenu(bool show)
-        {
-            if (m_ShowMainCanvas != show)
-            {
-                _ToggleMainMenu(show);
-            }
-        }
 
-        void _ToggleMainMenu(bool show)
+        private void HandleMenuButton()
         {
-            if (show)
-            {
-                // WORKAROUND: This is due to a problem where setting the time scale to 0 causes audio to stop playing.
-                Time.timeScale = 0.00001f;
-                mainMenu.gameObject.SetActive(true);
-                foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(false);
-            }
-            else
-            {
-                Time.timeScale = 1;
-                mainMenu.gameObject.SetActive(false);
-                foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(true);
-            }
-            m_ShowMainCanvas = show;
-        }
-
-        void HandleMenuButton()
-        {
-            ToggleMainMenu(show: !m_ShowMainCanvas);
-            Time.timeScale = m_ShowMainCanvas ? 0f : 1f;
-
-            if (m_FirstTime)
+            if (_firstTime)
             {
                 raceCountdownTrigger.TriggerDirector();
-                m_FirstTime = false;
+                _firstTime = false;
             }
         }
     }

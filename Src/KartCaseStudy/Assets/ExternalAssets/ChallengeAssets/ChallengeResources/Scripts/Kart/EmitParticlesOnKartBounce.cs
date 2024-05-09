@@ -11,7 +11,7 @@ public class EmitParticlesOnKartBounce : MonoBehaviour
 
     private void Awake() {
         p = GetComponent<ParticleSystem>();
-        var kart = GetComponentInParent<KartGame.KartSystems.KartMovement>();
+        var kart = GetComponentInParent<KartSystem.KartSystems.KartMovement>();
 
         //TODO:
         //should remove this once the template is fixed.

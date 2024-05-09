@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using KartGame.KartSystems;
+using KartSystem.KartSystems;
 using UnityEngine;
 
-namespace KartGame.Track
+namespace KartSystem.Track
 {
     /// <summary>
     /// A child class of KartRepositioner that positions a kart without any delay.

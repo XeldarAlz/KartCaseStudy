@@ -1,26 +1,24 @@
-﻿using UnityEngine;
-
-namespace KartGame.KartSystems
+﻿namespace KartSystem.KartSystems
 {
     /// <summary>
-    /// Should be implemented by things that are controlled by user input when that control can be turned on or off.
+    ///     Should be implemented by things that are controlled by user input when that control can be turned on or off.
     /// </summary>
     public interface IControllable
     {
         /// <summary>
-        /// Should be used to allow user input control.
+        ///     Should be used to allow user input control.
         /// </summary>
-        void EnableControl ();
+        void EnableControl();
 
         /// <summary>
-        /// Should be used to stop user input control.
+        ///     Should be used to stop user input control.
         /// </summary>
-        void DisableControl ();
+        void DisableControl();
 
         /// <summary>
-        /// Should be used to check whether the user currently has control.
+        ///     Should be used to check whether the user currently has control.
         /// </summary>
         /// <returns>Whether or not the user currently has control.</returns>
-        bool IsControlled ();
+        bool IsControlled();
     }
 }

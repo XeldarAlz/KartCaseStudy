@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using KartGame.Track;
+using KartSystem.Track;
 using UnityEngine;
 using UnityEngine.Events;
 using Object = UnityEngine.Object;
 
-namespace KartGame.KartSystems
+namespace KartSystem.KartSystems
 {
     /// <summary>
     ///     This class is responsible for all aspects of the kart's movement.  It uses a kinematic rigidbody and a capsule
@@ -94,11 +94,24 @@ namespace KartGame.KartSystems
             "When karts collide the movement is based on their weight difference and this additional velocity change.")]
         public float kartToKartBump = 10f;
 
+        [Tooltip(
+            "Rainbow particle indicating the movement speed")]
+        [SerializeField] private ParticleSystem _leftRainbowParticle;
+
+        [Tooltip(
+            "Rainbow particle indicating the movement speed")]
+        [SerializeField] private ParticleSystem _rightRainbowParticle;
+
+        [Tooltip(
+            "Audio source for the drift")]
+        [SerializeField] private AudioSource _driftAudio;
+
         public UnityEvent OnBecomeAirborne;
         public UnityEvent OnBecomeGrounded;
         public UnityEvent OnHop;
-        public UnityEvent OnDriftStarted;
-        public UnityEvent OnDriftStopped;
+        public delegate void DriftDelegate();
+        // public UnityEvent OnDriftStarted;
+        // public UnityEvent OnDriftStopped;
         public UnityEvent OnKartCollision;
 
         private IInput _input;
@@ -164,6 +177,8 @@ namespace KartGame.KartSystems
 
             if (driver != null)
                 _currentModifiers.Add((IKartModifier)driver);
+
+            OnDriftEnd();
         }
 
         private void FixedUpdate()
@@ -553,16 +568,36 @@ namespace KartGame.KartSystems
                     _driftOffset = Quaternion.Euler(0f, signedAngle, 0f);
                     _driftState = DriftState.FacingLeft;
 
-                    OnDriftStarted.Invoke();
+                    OnDriftStart();
                 }
                 else if (signedAngle < -minDriftStartAngle && signedAngle > -maxDriftStartAngle)
                 {
                     _driftOffset = Quaternion.Euler(0f, signedAngle, 0f);
                     _driftState = DriftState.FacingRight;
 
-                    OnDriftStarted.Invoke();
+                    OnDriftStart();
                 }
             }
+        }
+
+        /// <summary>
+        ///     State to activate drifting effects.
+        /// </summary>
+        private void OnDriftStart()
+        {
+            _leftRainbowParticle.Play();
+            _rightRainbowParticle.Play();
+            _driftAudio.Play();
+        }
+
+        /// <summary>
+        ///     State to deactivate drifting effects.
+        /// </summary>
+        private void OnDriftEnd()
+        {
+            _leftRainbowParticle.Stop();
+            _rightRainbowParticle.Stop();
+            _driftAudio.Stop();
         }
 
         /// <summary>
@@ -576,7 +611,7 @@ namespace KartGame.KartSystems
                     rotationCorrectionSpeed * deltaTime);
                 _driftState = DriftState.NotDrifting;
 
-                OnDriftStopped.Invoke();
+                OnDriftEnd();
             }
         }
 
@@ -614,6 +649,7 @@ namespace KartGame.KartSystems
                     _velocity = kartCollider.ModifyVelocity(this, _raycastHitBuffer[i]);
 
                     OnKartCollision.Invoke();
+                    
                 }
                 else
                 {

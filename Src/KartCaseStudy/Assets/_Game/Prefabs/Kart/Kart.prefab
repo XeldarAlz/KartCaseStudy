@@ -63,7 +63,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1.0334, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6492957747431005958}
@@ -93,6 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f292ffb948323c49ac31e54ff737ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JoystickSize: {x: 300, y: 300}
+  Joystick: {fileID: 0}
 --- !u!114 &3763822634849867138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,16 +129,19 @@ MonoBehaviour:
     weight: 3
   groundLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 256
   allCollidingLayers:
     serializedVersion: 2
-    m_Bits: 513
+    m_Bits: 257
   airborneOrientationSpeed: 60
   minDriftingSteering: 0.2
   rotationCorrectionSpeed: 180
   minDriftStartAngle: 15
   maxDriftStartAngle: 90
   kartToKartBump: 10
+  _leftRainbowParticle: {fileID: 1015250076}
+  _rightRainbowParticle: {fileID: 1330724767}
+  _driftAudio: {fileID: 5028510217269660630}
   OnBecomeAirborne:
     m_PersistentCalls:
       m_Calls: []
@@ -146,84 +151,6 @@ MonoBehaviour:
   OnHop:
     m_PersistentCalls:
       m_Calls: []
-  OnDriftStarted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1015250076}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1330724767}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5028510217269660630}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnDriftStopped:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1015250076}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1330724767}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5028510217269660630}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   OnKartCollision:
     m_PersistentCalls:
       m_Calls:
@@ -384,7 +311,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 09f715e4d9c95e848945e7702f9bab46, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -639,7 +566,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 94cb8601275583343ac318c5db2c2638, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -740,6 +667,14 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.41600037
       objectReference: {fileID: 0}
@@ -753,23 +688,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70710737
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071062
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000022351742
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00000007038021
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -778,6 +713,10 @@ PrefabInstance:
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19956934, guid: ad6a782a2105fb645824d5726daac042, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -811,6 +750,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38099957
       objectReference: {fileID: 0}
@@ -824,23 +771,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70710737
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071062
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000022351742
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00000007038021
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -849,6 +796,10 @@ PrefabInstance:
     - target: {fileID: 496482, guid: ad6a782a2105fb645824d5726daac042, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19956934, guid: ad6a782a2105fb645824d5726daac042, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -899,11 +850,11 @@ PrefabInstance:
       objectReference: {fileID: 3763822634849867138}
     - target: {fileID: 5690860426676778417, guid: ec5cb92a3a3d940e48635d86be0448cc, type: 3}
       propertyPath: maxVolume
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5690860426676778417, guid: ec5cb92a3a3d940e48635d86be0448cc, type: 3}
       propertyPath: minVolume
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5690860426676778417, guid: ec5cb92a3a3d940e48635d86be0448cc, type: 3}
       propertyPath: intake.clip
@@ -1178,6 +1129,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1866372466, guid: 281b409a5891b40eca60ca1e0fef11e5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1429,6 +1384,10 @@ PrefabInstance:
       value: RainbowTrail
       objectReference: {fileID: 0}
     - target: {fileID: 1110986524093539182, guid: d3ccf67055b3341468030d0fffd8d16f, type: 3}
+      propertyPath: m_Time
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110986524093539182, guid: d3ccf67055b3341468030d0fffd8d16f, type: 3}
       propertyPath: m_PreviewTimeScale
       value: 1
       objectReference: {fileID: 0}
@@ -1453,6 +1412,10 @@ PrefabInstance:
     - target: {fileID: 6876190511218754860, guid: dfa71f3ca0c2e408c855c56585bfbaad, type: 3}
       propertyPath: m_Name
       value: FireTrail
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876190511218754860, guid: dfa71f3ca0c2e408c855c56585bfbaad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6876190511218754863, guid: dfa71f3ca0c2e408c855c56585bfbaad, type: 3}
       propertyPath: m_RootOrder
@@ -1564,6 +1527,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1866372466, guid: 281b409a5891b40eca60ca1e0fef11e5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1585,6 +1552,10 @@ PrefabInstance:
     - target: {fileID: 6876190511218754860, guid: dfa71f3ca0c2e408c855c56585bfbaad, type: 3}
       propertyPath: m_Name
       value: FireTrail
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876190511218754860, guid: dfa71f3ca0c2e408c855c56585bfbaad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6876190511218754863, guid: dfa71f3ca0c2e408c855c56585bfbaad, type: 3}
       propertyPath: m_RootOrder
@@ -3185,6 +3156,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1866372466, guid: 05b85e11e59634a069efe1d16952f2f7, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3250,6 +3225,10 @@ PrefabInstance:
     - target: {fileID: 1110986523588131950, guid: d3ccf67055b3341468030d0fffd8d16f, type: 3}
       propertyPath: m_Name
       value: RainbowTrail
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110986524093539182, guid: d3ccf67055b3341468030d0fffd8d16f, type: 3}
+      propertyPath: m_Time
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

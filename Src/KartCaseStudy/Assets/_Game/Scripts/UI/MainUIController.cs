@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace KartGame.UI
+namespace KartSystem.UI
 {
     /// <summary>
     /// A MonoBehaviour for controlling the different panels of the main menu.

@@ -2,7 +2,7 @@
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace KartGame.KartSystems
+namespace KartSystem.KartSystems
 {
     /// <summary>
     ///     This class handles all the canned and procedural animation for the kart, giving it a more pleasing appearance.
@@ -139,8 +139,8 @@ namespace KartGame.KartSystems
         private float _inverseRearWheelRadius;
         private float _smoothedSteeringInput;
 
-        private static readonly int _hashSteering = Animator.StringToHash("Steering");
-        private static readonly int _hashGrounded = Animator.StringToHash("Grounded");
+        private static readonly int HashSteering = Animator.StringToHash("Steering");
+        private static readonly int HashGrounded = Animator.StringToHash("Grounded");
 
         private void Start()
         {
@@ -163,8 +163,8 @@ namespace KartGame.KartSystems
             _smoothedSteeringInput = Mathf.MoveTowards(_smoothedSteeringInput, _input.Steering,
                 steeringAnimationDamping * Time.deltaTime);
 
-            playerAnimator.SetFloat(_hashSteering, _smoothedSteeringInput);
-            playerAnimator.SetBool(_hashGrounded, _kartMovement.IsGrounded);
+            playerAnimator.SetFloat(HashSteering, _smoothedSteeringInput);
+            playerAnimator.SetBool(HashGrounded, _kartMovement.IsGrounded);
         }
 
         private void LateUpdate()

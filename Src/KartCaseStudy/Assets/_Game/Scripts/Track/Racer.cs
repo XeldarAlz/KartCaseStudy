@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using KartGame.KartSystems;
+using KartSystem.KartSystems;
 using UnityEngine;
 
-namespace KartGame.Track
+namespace KartSystem.Track
 {
     /// <summary>
     ///     The default implementation of the IRacer interface.  This is a representation of all the timing information for a
@@ -14,79 +14,79 @@ namespace KartGame.Track
         [RequireInterface(typeof(IControllable))]
         public Object kartMovement;
 
-        private IControllable m_KartMovement;
-        private bool m_IsTimerPaused = true;
-        private float m_Timer;
-        private int m_CurrentLap;
-        private readonly List<float> m_LapTimes = new(9);
+        private IControllable _kartMovement;
+        private bool _isTimerPaused = true;
+        public float _timer;
+        public int _currentLap;
+        public List<float> _lapTimes = new(9);
 
         private void Awake()
         {
-            m_KartMovement = kartMovement as IControllable;
+            _kartMovement = kartMovement as IControllable;
         }
 
         private void Update()
         {
-            if (m_CurrentLap > 0 && !m_IsTimerPaused) m_Timer += Time.deltaTime;
+            if (_currentLap > 0 && !_isTimerPaused) _timer += Time.deltaTime;
         }
 
         public void PauseTimer()
         {
-            m_IsTimerPaused = true;
+            _isTimerPaused = true;
         }
 
         public void UnpauseTimer()
         {
-            m_IsTimerPaused = false;
+            _isTimerPaused = false;
         }
 
         public void HitStartFinishLine()
         {
-            if (m_CurrentLap > 0)
+            if (_currentLap > 0)
             {
-                m_LapTimes.Add(m_Timer);
-                m_Timer = 0f;
+                _lapTimes.Add(_timer);
+                _timer = 0f;
             }
 
-            m_CurrentLap++;
+            _currentLap++;
         }
 
         public int GetCurrentLap()
         {
-            return m_CurrentLap;
+            return _currentLap;
         }
 
         public List<float> GetLapTimes()
         {
-            return m_LapTimes;
+            return _lapTimes;
         }
 
         public float GetLapTime()
         {
-            return m_Timer;
+            return _timer;
         }
 
         public float GetRaceTime()
         {
-            var raceTime = m_Timer;
-            for (var i = 0; i < m_LapTimes.Count; i++) raceTime += m_LapTimes[i];
+            var raceTime = _timer;
+            for (var i = 0; i < _lapTimes.Count; i++) raceTime += _lapTimes[i];
 
             return raceTime;
         }
 
         public void EnableControl()
         {
-            m_KartMovement.EnableControl();
+            _kartMovement.EnableControl();
         }
 
         public void DisableControl()
         {
-            m_KartMovement.DisableControl();
+            _kartMovement.DisableControl();
         }
 
         public bool IsControlled()
         {
-            return m_KartMovement.IsControlled();
+            return _kartMovement.IsControlled();
         }
 
         public string GetName()

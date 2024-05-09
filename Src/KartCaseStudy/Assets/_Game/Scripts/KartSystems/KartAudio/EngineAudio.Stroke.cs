@@ -1,48 +1,53 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-namespace KartGame.KartSystems
+namespace KartSystem.KartSystems
 {
     public partial class EngineAudio
     {
         /// <summary>
-        /// Represents audio data for a single stroke of an engine (2 strokes per revolution)
+        ///     Represents audio data for a single stroke of an engine (2 strokes per revolution)
         /// </summary>
-        [System.Serializable] public struct Stroke
+        [Serializable]
+        public struct Stroke
         {
             public AudioClip clip;
-            [Range (0, 1)]
-            public float gain;
-            internal float[] buffer;
-            internal int position;
+            [Range(0, 1)] public float gain;
+            internal float[] Buffer;
+            internal int Position;
 
-            internal void Reset () => position = 0;
-
-            internal float Sample ()
+            internal void Reset()
             {
-                if (position < buffer.Length)
+                Position = 0;
+            }
+
+            internal float Sample()
+            {
+                if (Position < Buffer.Length)
                 {
-                    var s = buffer[position];
-                    position++;
+                    var s = Buffer[Position];
+                    Position++;
                     return s * gain;
                 }
 
                 return 0;
             }
 
-            internal void Init ()
+            internal void Init()
             {
                 //if no clip is available use a noisy sine wave as a place holder.
                 //else initialise buffer of samples from clip data.
                 if (clip == null)
                 {
-                    buffer = new float[4096];
-                    for (var i = 0; i < buffer.Length; i++)
-                        buffer[i] = Mathf.Sin (i * (1f / 44100) * 440) + Random.Range (-1, 1) * 0.05f;
+                    Buffer = new float[4096];
+                    for (var i = 0; i < Buffer.Length; i++)
+                        Buffer[i] = Mathf.Sin(i * (1f / 44100) * 440) + Random.Range(-1, 1) * 0.05f;
                 }
                 else
                 {
-                    buffer = new float[clip.samples];
-                    clip.GetData (buffer, 0);
+                    Buffer = new float[clip.samples];
+                    clip.GetData(Buffer, 0);
                 }
             }
         }

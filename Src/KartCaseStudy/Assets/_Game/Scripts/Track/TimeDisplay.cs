@@ -5,297 +5,300 @@ using TMPro;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace KartGame.Track
+namespace KartSystem.Track
 {
     /// <summary>
-    /// A class to display information about a particular racer's timings.  WARNING: This class uses strings and creates a small amount of garbage each frame.
+    ///     A class to display information about a particular racer's timings.  WARNING: This class uses strings and creates a
+    ///     small amount of garbage each frame.
     /// </summary>
     public class TimeDisplay : MonoBehaviour
     {
         /// <summary>
-        /// The different information that can be displayed on screen.
+        ///     The different information that can be displayed on screen.
         /// </summary>
         public enum DisplayOptions
         {
             /// <summary>
-            /// Displays the total time of the current race.
+            ///     Displays the total time of the current race.
             /// </summary>
             Race,
+
             /// <summary>
-            /// Displays the time for all complete and non-complete laps.
+            ///     Displays the time for all complete and non-complete laps.
             /// </summary>
             AllLaps,
+
             /// <summary>
-            /// Displays the time for all the complete laps.
+            ///     Displays the time for all the complete laps.
             /// </summary>
             FinishedLaps,
+
             /// <summary>
-            /// Displays the time for all the complete laps and the current lap.
+            ///     Displays the time for all the complete laps and the current lap.
             /// </summary>
             FinishedAndCurrentLaps,
+
             /// <summary>
-            /// Displays the time for the current lap.
+            ///     Displays the time for the current lap.
             /// </summary>
             CurrentLap,
+
             /// <summary>
-            /// Displays the time for the best lap since the session started.
+            ///     Displays the time for the best lap since the session started.
             /// </summary>
             SessionBestLap,
+
             /// <summary>
-            /// Displays the time for the best race since the session started.
+            ///     Displays the time for the best race since the session started.
             /// </summary>
             SessionBestRace,
+
             /// <summary>
-            /// Displays the time for the best lap ever.
+            ///     Displays the time for the best lap ever.
             /// </summary>
             HistoricalBestLap,
+
             /// <summary>
-            /// Displays the time for the best race ever.
+            ///     Displays the time for the best race ever.
             /// </summary>
-            HistoricalBestRace,
+            HistoricalBestRace
         }
 
 
         [Tooltip("The timings to be displayed and the order to display them.")]
-        public List<DisplayOptions> initialDisplayOptions = new List<DisplayOptions>();
+        public List<DisplayOptions> initialDisplayOptions = new();
+
         [Tooltip("A reference to the track manager.")]
         public TrackManager trackManager;
+
         [Tooltip("A reference to the TextMeshProUGUI to display the information.")]
         public TextMeshProUGUI textComponent;
+
         [Tooltip("A reference to the racer to display the information for.")]
         [RequireInterface(typeof(IRacer))]
         public Object initialRacer;
 
-        List<Action> m_DisplayCalls = new List<Action>();
-        IRacer m_Racer;
-        StringBuilder m_StringBuilder = new StringBuilder(0, 300);
+        private List<Action> _displayCalls = new();
+        private IRacer _racer;
+        private StringBuilder _stringBuilder = new(0, 300);
 
-        void Awake()
+        private void Awake()
         {
-            for (int i = 0; i < initialDisplayOptions.Count; i++)
-            {
+            for (var i = 0; i < initialDisplayOptions.Count; i++)
                 switch (initialDisplayOptions[i])
                 {
                     case DisplayOptions.Race:
-                        m_DisplayCalls.Add(DisplayRaceTime);
+                        _displayCalls.Add(DisplayRaceTime);
                         break;
                     case DisplayOptions.AllLaps:
-                        m_DisplayCalls.Add(DisplayAllLapTimes);
+                        _displayCalls.Add(DisplayAllLapTimes);
                         break;
                     case DisplayOptions.FinishedLaps:
-                        m_DisplayCalls.Add(DisplayFinishedLapTimes);
+                        _displayCalls.Add(DisplayFinishedLapTimes);
                         break;
                     case DisplayOptions.FinishedAndCurrentLaps:
-                        m_DisplayCalls.Add(DisplayFinishedAndCurrentLapTimes);
+                        _displayCalls.Add(DisplayFinishedAndCurrentLapTimes);
                         break;
                     case DisplayOptions.CurrentLap:
-                        m_DisplayCalls.Add(DisplayCurrentLapTime);
+                        _displayCalls.Add(DisplayCurrentLapTime);
                         break;
                     case DisplayOptions.SessionBestLap:
-                        m_DisplayCalls.Add(DisplaySessionBestLapTime);
+                        _displayCalls.Add(DisplaySessionBestLapTime);
                         break;
                     case DisplayOptions.SessionBestRace:
-                        m_DisplayCalls.Add(DisplaySessionBestRaceTime);
+                        _displayCalls.Add(DisplaySessionBestRaceTime);
                         break;
                     case DisplayOptions.HistoricalBestLap:
-                        m_DisplayCalls.Add(DisplayHistoricalBestLapTime);
+                        _displayCalls.Add(DisplayHistoricalBestLapTime);
                         break;
                     case DisplayOptions.HistoricalBestRace:
-                        m_DisplayCalls.Add(DisplayHistoricalBestRaceTime);
+                        _displayCalls.Add(DisplayHistoricalBestRaceTime);
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
+
+            _racer = (IRacer)initialRacer;
+        }
+
+        private void Update()
+        {
+            _stringBuilder.Clear();
+
+            foreach (Action displayCall in _displayCalls)
+            {
+                displayCall.Invoke();
             }
 
-            // m_Racer = (IRacer)initialRacer;
+            textComponent.text = _stringBuilder.ToString();
         }
 
-        void Update()
+        private void DisplayRaceTime()
         {
-            m_StringBuilder.Clear();
+            _stringBuilder.AppendLine($"Total: {_racer.GetRaceTime():.##}");
+        }
 
-            for (int i = 0; i < m_DisplayCalls.Count; i++)
+        private void DisplayAllLapTimes()
+        {
+            var lapTimes = _racer.GetLapTimes();
+            var lapTotal = trackManager.raceLapTotal;
+
+            for (var i = 0; i < lapTotal; i++)
             {
-                m_DisplayCalls[i].Invoke();
-            }
-
-            textComponent.text = m_StringBuilder.ToString();
-        }
-
-        void DisplayRaceTime()
-        {
-            m_StringBuilder.AppendLine($"Total: {m_Racer.GetRaceTime():.##}");
-        }
-
-        void DisplayAllLapTimes()
-        {
-            List<float> lapTimes = m_Racer.GetLapTimes();
-            int lapTotal = trackManager.raceLapTotal;
-
-            for (int i = 0; i < lapTotal; i++)
-            {
-                m_StringBuilder.Append("Lap ");
-                m_StringBuilder.Append(i + 1);
-                m_StringBuilder.Append(": ");
+                _stringBuilder.Append("Lap ");
+                _stringBuilder.Append(i + 1);
+                _stringBuilder.Append(": ");
 
                 if (i < lapTimes.Count)
-                {
-                    m_StringBuilder.AppendFormat(lapTimes[i].ToString(".##"));
-                }
+                    _stringBuilder.AppendFormat(lapTimes[i].ToString(".##"));
                 else
-                {
-                    m_StringBuilder.Append("--:--");
-                }
+                    _stringBuilder.Append("--:--");
 
-                m_StringBuilder.Append('\n');
-            }
-
-        }
-
-        void DisplayFinishedLapTimes()
-        {
-            List<float> lapTimes = m_Racer.GetLapTimes();
-            for (int i = 0; i < lapTimes.Count; i++)
-            {
-                m_StringBuilder.Append("Lap ");
-                m_StringBuilder.Append(i + 1);
-                m_StringBuilder.Append(": ");
-                m_StringBuilder.Append(lapTimes[i].ToString(".##"));
-                m_StringBuilder.Append('\n');
+                _stringBuilder.Append('\n');
             }
         }
 
-        void DisplayFinishedAndCurrentLapTimes()
+        private void DisplayFinishedLapTimes()
         {
-            List<float> lapTimes = m_Racer.GetLapTimes();
-            for (int i = 0; i < lapTimes.Count; i++)
+            var lapTimes = _racer.GetLapTimes();
+            for (var i = 0; i < lapTimes.Count; i++)
             {
-                m_StringBuilder.Append("Lap ");
-                m_StringBuilder.Append(i + 1);
-                m_StringBuilder.Append(": ");
-                m_StringBuilder.Append(lapTimes[i].ToString(".##"));
-                m_StringBuilder.Append('\n');
+                _stringBuilder.Append("Lap ");
+                _stringBuilder.Append(i + 1);
+                _stringBuilder.Append(": ");
+                _stringBuilder.Append(lapTimes[i].ToString(".##"));
+                _stringBuilder.Append('\n');
+            }
+        }
+
+        private void DisplayFinishedAndCurrentLapTimes()
+        {
+            var lapTimes = _racer.GetLapTimes();
+            for (var i = 0; i < lapTimes.Count; i++)
+            {
+                _stringBuilder.Append("Lap ");
+                _stringBuilder.Append(i + 1);
+                _stringBuilder.Append(": ");
+                _stringBuilder.Append(lapTimes[i].ToString(".##"));
+                _stringBuilder.Append('\n');
             }
 
-            float currentLapTime = m_Racer.GetLapTime();
+            var currentLapTime = _racer.GetLapTime();
             if (Mathf.Approximately(currentLapTime, 0f))
                 return;
 
-            m_StringBuilder.Append("Lap ");
-            m_StringBuilder.Append(lapTimes.Count + 1);
-            m_StringBuilder.Append(": ");
-            m_StringBuilder.Append(currentLapTime.ToString(".##"));
-            m_StringBuilder.Append('\n');
+            _stringBuilder.Append("Lap ");
+            _stringBuilder.Append(lapTimes.Count + 1);
+            _stringBuilder.Append(": ");
+            _stringBuilder.Append(currentLapTime.ToString(".##"));
+            _stringBuilder.Append('\n');
         }
 
-        void DisplayCurrentLapTime()
+        private void DisplayCurrentLapTime()
         {
-            float currentLapTime = m_Racer.GetLapTime();
+            var currentLapTime = _racer.GetLapTime();
             if (Mathf.Approximately(currentLapTime, 0f))
                 return;
 
-            m_StringBuilder.Append("Current: ");
-            m_StringBuilder.Append(currentLapTime.ToString(".##"));
-            m_StringBuilder.Append('\n');
+            _stringBuilder.Append("Current: ");
+            _stringBuilder.Append(currentLapTime.ToString(".##"));
+            _stringBuilder.Append('\n');
         }
 
-        void DisplaySessionBestLapTime()
+        private void DisplaySessionBestLapTime()
         {
-            float bestLapTime = trackManager.SessionBestLap;
+            var bestLapTime = trackManager.SessionBestLap;
             if (Mathf.Approximately(bestLapTime, -1f))
                 return;
 
-            m_StringBuilder.Append("Session Best Lap: ");
-            m_StringBuilder.Append(bestLapTime.ToString(".##"));
-            m_StringBuilder.Append('\n');
+            _stringBuilder.Append("Session Best Lap: ");
+            _stringBuilder.Append(bestLapTime.ToString(".##"));
+            _stringBuilder.Append('\n');
         }
 
-        void DisplaySessionBestRaceTime()
+        private void DisplaySessionBestRaceTime()
         {
-            float bestLapTime = trackManager.SessionBestRace;
+            var bestLapTime = trackManager.SessionBestRace;
             if (Mathf.Approximately(bestLapTime, -1f))
                 return;
 
-            m_StringBuilder.Append("Session Best Race: ");
-            m_StringBuilder.Append(bestLapTime.ToString(".##"));
-            m_StringBuilder.Append('\n');
+            _stringBuilder.Append("Session Best Race: ");
+            _stringBuilder.Append(bestLapTime.ToString(".##"));
+            _stringBuilder.Append('\n');
         }
 
-        void DisplayHistoricalBestLapTime()
+        private void DisplayHistoricalBestLapTime()
         {
-            float bestLapTime = trackManager.HistoricalBestLap;
+            var bestLapTime = trackManager.HistoricalBestLap;
             if (Mathf.Approximately(bestLapTime, -1f))
                 return;
 
-            m_StringBuilder.Append("Best Lap Ever: ");
-            m_StringBuilder.Append(bestLapTime.ToString(".##"));
-            m_StringBuilder.Append('\n');
+            _stringBuilder.Append("Best Lap Ever: ");
+            _stringBuilder.Append(bestLapTime.ToString(".##"));
+            _stringBuilder.Append('\n');
         }
 
-        void DisplayHistoricalBestRaceTime()
+        private void DisplayHistoricalBestRaceTime()
         {
-            float bestLapTime = trackManager.HistoricalBestRace;
+            var bestLapTime = trackManager.HistoricalBestRace;
             if (Mathf.Approximately(bestLapTime, -1f))
                 return;
 
-            m_StringBuilder.Append("Best Race Ever: ");
-            m_StringBuilder.Append(bestLapTime.ToString(".##"));
-            m_StringBuilder.Append('\n');
+            _stringBuilder.Append("Best Race Ever: ");
+            _stringBuilder.Append(bestLapTime.ToString(".##"));
+            _stringBuilder.Append('\n');
         }
 
         /// <summary>
-        /// Call this function to change what information is currently being displayed.  This causes a GCAlloc.
+        ///     Call this function to change what information is currently being displayed.  This causes a GCAlloc.
         /// </summary>
         /// <param name="newDisplay">A collection of the new options for the display.</param>
         /// <exception cref="ArgumentOutOfRangeException">One or more of the display options is not valid.</exception>
         public void RebindDisplayOptions(List<DisplayOptions> newDisplay)
         {
-            m_DisplayCalls.Clear();
+            _displayCalls.Clear();
 
-            for (int i = 0; i < newDisplay.Count; i++)
-            {
+            for (var i = 0; i < newDisplay.Count; i++)
                 switch (newDisplay[i])
                 {
                     case DisplayOptions.Race:
-                        m_DisplayCalls.Add(DisplayRaceTime);
+                        _displayCalls.Add(DisplayRaceTime);
                         break;
                     case DisplayOptions.AllLaps:
-                        m_DisplayCalls.Add(DisplayAllLapTimes);
+                        _displayCalls.Add(DisplayAllLapTimes);
                         break;
                     case DisplayOptions.FinishedLaps:
-                        m_DisplayCalls.Add(DisplayFinishedLapTimes);
+                        _displayCalls.Add(DisplayFinishedLapTimes);
                         break;
                     case DisplayOptions.FinishedAndCurrentLaps:
-                        m_DisplayCalls.Add(DisplayFinishedAndCurrentLapTimes);
+                        _displayCalls.Add(DisplayFinishedAndCurrentLapTimes);
                         break;
                     case DisplayOptions.CurrentLap:
-                        m_DisplayCalls.Add(DisplayCurrentLapTime);
+                        _displayCalls.Add(DisplayCurrentLapTime);
                         break;
                     case DisplayOptions.SessionBestLap:
-                        m_DisplayCalls.Add(DisplaySessionBestLapTime);
+                        _displayCalls.Add(DisplaySessionBestLapTime);
                         break;
                     case DisplayOptions.SessionBestRace:
-                        m_DisplayCalls.Add(DisplaySessionBestRaceTime);
+                        _displayCalls.Add(DisplaySessionBestRaceTime);
                         break;
                     case DisplayOptions.HistoricalBestLap:
-                        m_DisplayCalls.Add(DisplayHistoricalBestLapTime);
+                        _displayCalls.Add(DisplayHistoricalBestLapTime);
                         break;
                     case DisplayOptions.HistoricalBestRace:
-                        m_DisplayCalls.Add(DisplayHistoricalBestRaceTime);
+                        _displayCalls.Add(DisplayHistoricalBestRaceTime);
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
-            }
         }
 
         /// <summary>
-        /// Call this function to change the racer about which the information is being displayed.
+        ///     Call this function to change the racer about which the information is being displayed.
         /// </summary>
         public void RebindRacer(IRacer newRacer)
         {
-            m_Racer = newRacer;
+            _racer = newRacer;
         }
     }
 }

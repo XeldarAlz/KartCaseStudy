@@ -1,69 +1,76 @@
 ﻿using System;
 using UnityEngine;
 
-namespace KartGame.Track
+namespace KartSystem.Track
 {
     /// <summary>
     /// This is used to mark out key points on the track that a racer must pass through in order to count as having completed a lap.
     /// </summary>
-    [RequireComponent (typeof(BoxCollider))]
+    [RequireComponent(typeof(BoxCollider))]
     public class Checkpoint : MonoBehaviour
     {
         /// <summary>
         /// This is subscribed to by the TrackManager in order to measure a racer's progress around the track.
         /// </summary>
+
+        public delegate void KartHitDelegate(IRacer racer, Checkpoint checkpoint);
+        public event KartHitDelegate OnKartHit;
+
         public event Action<IRacer, Checkpoint> OnKartHitCheckpoint;
 
-        [Tooltip ("Whether or not this checkpoint is the start/finish line.")]
+        [Tooltip("Whether or not this checkpoint is the start/finish line.")]
         public bool isStartFinishLine;
-        [Tooltip ("The layers to check for a kart passing through this trigger.")]
+        [Tooltip("The layers to check for a kart passing through this trigger.")]
         public LayerMask kartLayers;
         [Tooltip("The layers to check for the ground.  Used to determine where the reset position for a kart is.")]
         public LayerMask groundLayers;
 
-        Vector3 m_ResetPosition;
-        Quaternion m_ResetRotation;
+        private Vector3 _resetPosition;
+        private Quaternion _resetRotation;
 
-        public Vector3 ResetPosition => m_ResetPosition;
-        public Quaternion ResetRotation => m_ResetRotation;
+        public Vector3 ResetPosition => _resetPosition;
+        public Quaternion ResetRotation => _resetRotation;
 
-        void Reset ()
+        private void Reset()
         {
-            GetComponent<BoxCollider> ().isTrigger = true;
-            kartLayers = LayerMask.GetMask ("Default");
+            GetComponent<BoxCollider>().isTrigger = true;
+            kartLayers = LayerMask.GetMask("Default");
         }
 
-        void Start ()
+        private void Start()
         {
-            float boxColliderHeight = GetComponent<BoxCollider> ().size.y;
-            Ray ray = new Ray(transform.position + Vector3.up * boxColliderHeight * 0.5f, -Vector3.up);
-            
-            RaycastHit[] hits = Physics.RaycastAll (ray, boxColliderHeight, groundLayers, QueryTriggerInteraction.Ignore);
+            float boxColliderHeight = GetComponent<BoxCollider>().size.y;
+            Ray ray = new(transform.position + Vector3.up * boxColliderHeight * 0.5f, -Vector3.up);
+
+            RaycastHit[] hits = Physics.RaycastAll(ray, boxColliderHeight, groundLayers, QueryTriggerInteraction.Ignore);
 
             if (hits.Length == 0)
-                throw new UnityException ("This checkpoint is not above ground and has no set reset position.");
-            
-            RaycastHit closestGround = new RaycastHit ();
-            closestGround.distance = float.PositiveInfinity;
-            
+                throw new UnityException("This checkpoint is not above ground and has no set reset position.");
+
+            RaycastHit closestGround = new()
+            {
+                distance = float.PositiveInfinity
+            };
+
             for (int i = 0; i < hits.Length; i++)
             {
                 if (hits[i].distance < closestGround.distance)
                     closestGround = hits[i];
             }
 
-            m_ResetPosition = closestGround.point;
-
-            m_ResetRotation = Quaternion.LookRotation (transform.forward, closestGround.normal);
+            _resetPosition = closestGround.point;
+            _resetRotation = Quaternion.LookRotation(transform.forward, closestGround.normal);
         }
 
-        void OnTriggerEnter (Collider other)
+        private void OnTriggerEnter(Collider other)
         {
-            if (kartLayers.ContainsGameObjectsLayer (other.gameObject))
+            if (kartLayers.ContainsGameObjectsLayer(other.gameObject))
             {
-                IRacer racer = other.GetComponent<IRacer> ();
+                IRacer racer = other.GetComponent<IRacer>();
                 if (racer != null)
-                    OnKartHitCheckpoint?.Invoke (racer, this);
+                {
+                    OnKartHitCheckpoint?.Invoke(racer, this);
+                }
             }
         }
     }

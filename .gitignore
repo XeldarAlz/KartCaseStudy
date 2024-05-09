@@ -31,7 +31,6 @@ src/**/.consulo/
 *.pdb.meta
 *.mdb.meta
 src/**/sysinfo.txt
-*.apk
 *.unitypackage
 src/**/crashlytics-build.properties
 .DS_Store

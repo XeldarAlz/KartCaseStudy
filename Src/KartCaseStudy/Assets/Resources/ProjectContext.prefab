@@ -94,12 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e6589720da476459dc6dd71624b071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObjectInstallers:
-  - {fileID: 11400000, guid: 1e6219de57db7eb4292f29c3c57c12cf, type: 2}
-  - {fileID: 11400000, guid: ad1c13e16e559864ebabbf4d63ac1fff, type: 2}
+  _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 1140805748923600982}
-  - {fileID: 171424471709071833}
   _installerPrefabs: []
   _parentNewObjectsUnderContext: 1
   _editorReflectionBakingCoverageMode: 0
@@ -123,7 +120,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5895124411448373515}
-  - component: {fileID: 171424471709071833}
   m_Layer: 0
   m_Name: PlayerInstaller
   m_TagString: Untagged
@@ -146,18 +142,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9198337654634909263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &171424471709071833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043255737671909688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2470b0c959381e44883461cdd2e65935, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6818821914507784172
 GameObject:
   m_ObjectHideFlags: 0

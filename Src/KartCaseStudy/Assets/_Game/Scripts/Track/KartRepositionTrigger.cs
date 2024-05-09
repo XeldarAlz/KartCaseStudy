@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using KartGame.KartSystems;
+using KartSystem.KartSystems;
 using UnityEngine;
 
-namespace KartGame.Track
+namespace KartSystem.Track
 {
     /// <summary>
     /// This class exists only as a way of triggering a kart reset in the template and should not be used as part of a full game.
@@ -21,7 +21,7 @@ namespace KartGame.Track
 
         void Awake()
         {
-            // m_Movable = (IMovable)movable;
+            m_Movable = (IMovable)movable;
         }
 
         void Update()
