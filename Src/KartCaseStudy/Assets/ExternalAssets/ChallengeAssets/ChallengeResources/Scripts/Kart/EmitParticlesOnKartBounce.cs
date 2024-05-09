@@ -1,32 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EmitParticlesOnKartBounce : MonoBehaviour
 {
+    private ParticleSystem p;
 
-#if UNITY_TEMPLATE_KART
-
-    ParticleSystem p;
-
-    private void Awake() {
+    private void Awake()
+    {
         p = GetComponent<ParticleSystem>();
         var kart = GetComponentInParent<KartSystem.KartSystems.KartMovement>();
-
-        //TODO:
-        //should remove this once the template is fixed.
-        //need to clamp capsule size as kart's collider is too big for Bounce to work in the default template.
         var capsule = kart.GetComponent<CapsuleCollider>();
         capsule.height = Mathf.Clamp(capsule.height, 0, 1f);
 
         kart.OnKartCollision.AddListener(KartCollision_OnExecute);
     }
 
-    void KartCollision_OnExecute() {
+    private void KartCollision_OnExecute()
+    {
         p.Play();
     }
-
-
-#endif
-
 }

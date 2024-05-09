@@ -116,7 +116,7 @@ MonoBehaviour:
   leftGroundRaycast: {fileID: 6706556457813598257}
   rearGroundRaycast: {fileID: 2492833699451386368}
   defaultStats:
-    acceleration: 5
+    acceleration: 8.5
     braking: 20
     coastingDrag: 3
     gravity: 35
@@ -124,8 +124,8 @@ MonoBehaviour:
     hopHeight: 4
     reverseAcceleration: 3
     reverseSpeed: 5
-    topSpeed: 55
-    turnSpeed: 60
+    topSpeed: 50
+    turnSpeed: 62
     weight: 3
   groundLayers:
     serializedVersion: 2
@@ -229,6 +229,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kartMovement: {fileID: 3763822634849867138}
+  _timer: 0
+  _currentLap: 0
+  _lapTimes: []
 --- !u!114 &3763822634849867150
 MonoBehaviour:
   m_ObjectHideFlags: 0
